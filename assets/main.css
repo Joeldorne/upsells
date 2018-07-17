@@ -1,0 +1,153 @@
+/* buttons */
+button {
+	border:0px;
+	padding:20px 50px 20px 50px;
+	border-radius:5px;
+	font-weight:bold;
+	margin-bottom:20px !important;
+}
+
+button#order {
+
+	background:green;
+	color:white;
+}
+
+button#cancel {
+
+	background:lightgrey;
+	color:black;
+	border: 1px solid black;
+	font-weight:500;
+}
+
+/* Frameowrk */
+
+
+.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
+
+	padding: 0px !important;
+}
+
+/* Root Colors */
+
+:root {
+  --main-bg-color: brown;
+}
+
+body {
+    background-color: #F8F8F8;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.row {
+  margin:0px !important;
+}
+
+/* Genral Code */
+
+p { 
+	font-size: 18px !important;
+	line-height:22px;
+	color:darkblue;
+
+}
+
+
+
+
+/* Steps Code */
+
+.steps {
+    border:1px solid black;
+    border-radius: 200px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.step {
+    background:lightgrey;
+    padding: 20px !important;
+    border-right: 1px solid black;
+
+
+}
+.current-step {
+    background:#575757;
+    color:white;
+}
+
+.step-dot {
+  	height: 20px;
+    width: 20px;
+    background: #575757;
+    display: inline-block;
+    border-radius: 100px;
+  	margin-right:10px;
+  	top: -1px;
+  	position:relative;
+}
+
+.current-step .step-dot { 
+ 	background:white;
+}
+
+/* Nav */
+
+.nav {
+    background:lightgrey;
+}
+
+/* Media */
+
+@media only screen and (max-width: 768px) {
+    .steps {
+       border-radius: 5px;
+       border-right:0px;
+    }
+}
+
+.bottom-cta {
+	background:#e5e5e5;
+	padding:50px 0px 50px 0px !important;
+	color:darkblue;
+}
+.bottom-cta h1::after {
+	content: '';
+	display:flex;
+	height: 5px;
+	width: 10%;
+	top: 20px;
+	background: black;
+	position: relative;
+	left: 45%;
+}
+/* Youtube */
+
+.youtube { 
+	background:lightgrey;
+}
+
+.youtube-video {
+
+	padding:40px !important;
+}
+/* Expire */
+
+.expire { 
+	background:lightgrey;
+}
+
+/* Discount */
+.discount {
+	border: 2px dotted black;
+}
+.footer {
+	background:darkblue;
+	color:white;
+	padding:20px !important;
+}
+
