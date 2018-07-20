@@ -1,10 +1,18 @@
+.bottom-cta button {
+
+    width: 100%;
+}
 /* buttons */
+    
 button {
 	border:0px;
-	padding:20px 50px 20px 50px;
+	padding:20px 30px 20px 30px;
 	border-radius:5px;
 	font-weight:bold;
 	margin-bottom:20px !important;
+    width:100%;
+    margin-top: 20px !important;
+    border-radius:100px;
 }
 
 button#order {
@@ -13,12 +21,24 @@ button#order {
 	color:white;
 }
 
+button#order:hover {
+
+	background:darkgreen;
+}
+
 button#cancel {
 
 	background:lightgrey;
 	color:black;
 	border: 1px solid black;
 	font-weight:500;
+    border-radius: 5px;
+}
+
+button#cancel:hover {
+
+	background:red;
+	color:white;
 }
 
 /* Frameowrk */
@@ -32,7 +52,11 @@ button#cancel {
 /* Root Colors */
 
 :root {
-  --main-bg-color: brown;
+  --main-green-color: #3C963E;
+  --main-blue-color: #093783;
+  --main-turquoise-color: #4998A7;
+  --main-lightgrey-color: #EFEFEF;
+  --main-grey-color: #ADADAD; 
 }
 
 body {
@@ -48,10 +72,15 @@ body {
 
 /* Genral Code */
 
+h2 {
+
+    line-height:150% !important;
+
+}
+
 p { 
 	font-size: 18px !important;
-	line-height:22px;
-	color:darkblue;
+	line-height:30px;
 
 }
 
@@ -113,7 +142,7 @@ p {
 .bottom-cta {
 	background:#e5e5e5;
 	padding:50px 0px 50px 0px !important;
-	color:darkblue;
+	color:var(--main-blue-color);
 }
 .bottom-cta h1::after {
 	content: '';
@@ -121,7 +150,17 @@ p {
 	height: 5px;
 	width: 10%;
 	top: 20px;
-	background: black;
+	background: var(--main-blue-color);
+	position: relative;
+	left: 45%;
+}
+.notice h2::after {
+	content: '';
+	display:flex;
+	height: 5px;
+	width: 10%;
+	top: 20px;
+	background: var(--main-blue-color);
 	position: relative;
 	left: 45%;
 }
@@ -129,6 +168,8 @@ p {
 
 .youtube { 
 	background:lightgrey;
+    color:var(--main-blue-color);
+    padding: 40px 0px;
 }
 
 .youtube-video {
@@ -136,9 +177,21 @@ p {
 	padding:40px !important;
 }
 /* Expire */
+#time {
+    color:white;
+    padding:5px 20px;
+    border-radius:100px;
+    background:var(--main-blue-color);
+}
+
 
 .expire { 
-	background:lightgrey;
+    border-radius:100px;
+    padding:10px 20px;
+    font-size:18px;
+    background:white;
+    color:var(--main-blue-color);
+
 }
 
 /* Discount */
@@ -146,8 +199,70 @@ p {
 	border: 2px dotted black;
 }
 .footer {
-	background:darkblue;
-	color:white;
+	background:var(--main-blue-color);
+	color: white !important;
 	padding:20px !important;
 }
 
+
+.notice {
+    color:var(--main-blue-color);
+    padding: 50px 0px 50px 0px;
+}
+
+.notice .image, .notice .text {
+    border-right:1px solid;
+    padding:30px !important;
+}
+
+.guarantee {
+
+    background:var(--main-blue-color);
+    padding:40px 0px;
+    color:white;
+}
+
+.per-bottle {
+
+    background:white;
+    color:var(--main-blue-color);
+}
+
+.per-bottle .text , .per-bottle .image {
+
+    padding:30px !important;
+}
+
+.retail {
+    border:1px solid black;
+    border-radius: 100px;
+    padding:10px 20px;
+    color:black;
+}
+
+.main {
+        
+    padding:40px;
+    color:white;
+    background:var(--main-blue-color);
+}
+
+.important {
+
+    color:white;
+    padding:10px 20px;
+    border-radius:100px;
+    background:var(--main-blue-color);
+}
+
+.highlight {
+    padding:5px 10px;
+    border: 1px solid var(--main-blue-color);
+}
+
+
+.border {
+
+    border:1px solid black !important;
+    margin-top:20px !important;
+}
