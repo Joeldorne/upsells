@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/main.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script>
 	function startTimer(duration, display) {
             var timer = duration, minutes, seconds;
@@ -35,64 +37,87 @@ window.onload = function () {
 </head>
 <body>
 <div class="wrap">
+    <!-- logo End -->
+
     <div class="row nav center-xs middle-xs"> 
         <div class="col-xs-12"> 
-            <h1>Provitalize</h1> 
+            <img src="img/company-logo.png">
         </div> 
     </div> 
 
+    <!-- logo End -->
+    <div class="row start">
+
+        <div class="col-xs-12"> 
+            <div class="row center-xs"> 
+                <div class="col-xs-11 col-md-4 col-sm-6 steps"> 
+                    <div class="row center-xs"> 
+                        <!-- 1st Step --> 
+                        <div class="col-md-4 col-xs-12 col-sm-4 step current-step"> 
+                            <div class="row middle-xs center-xs"> 
+                                <i class="fa fa-check"></i>
+                                <p>Step 1</p>
+                            </div> 
+                        </div> 
+                        <!-- 2nd Step --> 
+                        <div class="col-md-4 col-xs-12 col-sm-4 step"> 
+                            <div class="row middle-xs center-xs"> 
+                                <i class="fa fa-circle-o"></i>
+                                    <p>Step 2</p>
+                            </div> 
+                        </div> 
+                        <!-- 3nd Step --> 
+                        <div class="col-md-4 col-xs-12 col-sm-4 step"> 
+                            <div class="row middle-xs center-xs"> 
+                                <i class="fa fa-circle-o"></i>
+                                    <p>Step 3</p>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            </div> 
+            </div> 
 
 
-    <div class="col-xs-12"> 
-		<div class="row center-xs"> 
-			<h1>Step 1 of 3:</h1>
-		</div>
-	</div>
-    <div class="col-xs-12"> 
-		<div class="row center-xs"> 
-			<h1>WAIT! BEFORE YOU CONTINUE, CHECK OUT THIS ONE-TIME OFFER</h1>
-		</div>
-	</div>
+        <!-- Wait -->
+        <div class="row"> 
+            <i class="fa fa-octagon"></i>
+        <div class="col-xs-12"> 
+            <div class="row center-xs"> 
+                <div class="warning"><h1>Wait!</h1></div>
+            </div>
+            <div class="row center-xs"> 
+                <h1>Before you continue, check out this one-time offer</h1>
+            </div>
+        </div>
+        </div>
 
-    <div class="col-xs-12"> 
-        <div class="row center-xs"> 
-            <div class="col-xs-11 col-md-6 col-sm-6 steps"> 
-                <div class="row center-xs"> 
-					<!-- 1st Step --> 
-					<div class="col-md-4 col-xs-12 col-sm-4 step current-step"> 
-						<div class="row middle-xs center-xs"> 
-							<span class="step-dot"></span> 
-								<p>Step 1</p>
-						</div> 
-					</div> 
-					<!-- 2nd Step --> 
-					<div class="col-md-4 col-xs-12 col-sm-4 step"> 
-						<div class="row middle-xs center-xs"> 
-							<span class="step-dot"></span> 
-								<p>Step 2</p>
-						</div> 
-					</div> 
-					<!-- 3nd Step --> 
-					<div class="col-md-4 col-xs-12 col-sm-4 step"> 
-						<div class="row middle-xs center-xs"> 
-							<span class="step-dot"></span> 
-								<p>Step 3</p>
-						</div> 
-					</div> 
-				</div> 
-			</div> 
-		</div> 
+
+        <!-- Congratulations -->
+        <div class="row"> 
+            <div class="container congrats"> 
+                <div class="col-xs-12"> 
+                    <div class="row middle-xs"> 
+                        <div class=" col-xs-2 center-xs"> 
+                            <i class="fa fa-truck fa-5x"></i>
+                        </div>
+                        <div class=" col-xs-10"> 
+                            <p><b>Congratulations!</b> Your Provitalize order is on its way. Soon you can
+                            experience how its unique formula can rebalance your gut bacteria and
+                            
+                            turn more fat into fuel. Yet…</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div> 
 	</div> 
 
+
+<!-- End -->
+
 <!-- New code -->
-    <div class="col-xs-12"> 
-		<div class="row center-xs"> 
-			<p>Congratulations! Your Provitalize order is on its way. Soon you can
-            experience how its unique formula can rebalance your gut bacteria and
-            
-            turn more fat into fuel. Yet…</p>
-		</div>
-	</div>
     <!-- Section -->
     <div class="row main">
         <div class="container">
@@ -126,8 +151,10 @@ window.onload = function () {
                 </div>
             </div>
             <div class="col-xs-12"> 
-                <div class="row center-xs"> 
-                    <button id="order">Add &quot;Provitalize 6-Bottle Bundle&quot; to your order now</button>
+                <div class="row center-xs middle-xs"> 
+                    <button  class="row center-xs middle-xs" id="order">Add &quot;Provitalize 6-Bottle Bundle&quot; to your order now
+                            <i class="fa fa-cart-plus fa-2x"></i>
+                            </button>
                 </div>
             </div>
         </div>
@@ -304,17 +331,6 @@ window.onload = function () {
 	</div>
 	<!-- end Bottom CTA -->
 
-	<!-- Footer -->
-    <div class="row footer">
-        <div class="container">
-            <div class="col-xs-12"> 
-                <div class="row center-xs middle-xs"> 
-                    <p>Footer Logo</p>
-                </div>
-            </div>
-        </div>
-	</div>
-	<!-- End Footer -->
 </div>
 </body>
 </html>
