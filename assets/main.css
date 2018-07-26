@@ -54,7 +54,7 @@ button {
 
 button#order {
 
-    background:var(--main-turquoise-color);
+    background:var(--main-green-color);
 	color:white;
 }
 
@@ -240,7 +240,7 @@ p {
     padding:10px 20px;
     font-size:18px;
     color:white;
-    background:var(--main-turquoise-color);
+    background:#e57b7b;
     border-radius:5px;
 
 }
@@ -273,8 +273,12 @@ p {
     background:white;
     color:var(--main-text-color);
     border: 1px solid black;
+    margin-bottom:40px !important;
 }
 
+.image {
+    border-left:1px solid black;
+    I}
 .per-bottle .text , .per-bottle .image {
 
     padding:30px !important;
@@ -297,8 +301,8 @@ p {
 
     color:white;
     padding:10px 20px;
-    border-radius:100px;
-    background:var(--main-turquoise-color);
+    border-radius:5px;
+    background:#e57b7b;
 }
 
 .highlight {
