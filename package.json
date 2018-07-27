@@ -2,7 +2,19 @@
   "name": "upsells",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-image": "^4.3.0",
+    "gulp-pug": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

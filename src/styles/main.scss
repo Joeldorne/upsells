@@ -93,7 +93,7 @@ button#cancel:hover {
   --main-turquoise-color: #4998A7;
   --main-lightgrey-color: #EFEFEF;
   --main-grey-color: #ADADAD; 
-  --main-text-color #323232; 
+  --main-text-color: #323232; 
 }
 
 body {
@@ -175,7 +175,6 @@ p {
 .nav {
     background:var(--main-turquoise-color);
     color:white;
-    box-shadow: 0px 0px 10px 1px rgb(9, 55, 131, 0.2);
 }
 
 .nav img {
@@ -278,7 +277,7 @@ p {
 
 .image {
     border-left:1px solid black;
-    I}
+    }
 .per-bottle .text , .per-bottle .image {
 
     padding:30px !important;
