@@ -2,16 +2,24 @@ var sass = require('gulp-sass');
 var gulp = require('gulp'); 
 var pug = require('gulp-pug');
 var gutil = require('gulp-util');
+var connect = require('gulp-connect');
 
-gulp.task('copy', function() {
+gulp.task('images', function() {
   gulp.src('src/img/*')
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('scripts', function() {
+  gulp.src('src/scripts/*.js')
+  .pipe(gulp.dest('dist/scripts'))
+    .pipe(connect.reload());
 });
 
 gulp.task('pug', function() {
         gulp.src('src/*.pug')
        .pipe(pug())
-       .pipe(gulp.dest('dist'));
+       .pipe(gulp.dest('dist'))
+       .pipe(connect.reload());
 });
 
 gulp.task('log', function() {
@@ -23,12 +31,24 @@ gulp.task('sass', function() {
   .pipe(sass({style: 'expanded'}))
     .on('error', gutil.log)
   .pipe(gulp.dest('dist/styles'))
+       .pipe(connect.reload());
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'dist/',
+    name: 'Dist App',
+    root: 'dist',
+    port: 8001,
+    livereload: true
+  })
 });
 
 gulp.task('watch', function() {
   gulp.watch('src/**/*.pug', ['pug']);
   gulp.watch('src/styles/*.scss', ['sass']);
-  gulp.watch('src/img/*', ['copy']);
+  gulp.watch('src/img/*', ['images']);
+  gulp.watch('src/img/*', ['scripts']);
 });
 
-gulp.task('default', ['image']);
+gulp.task('default', ['pug', 'images', 'scripts', 'sass', 'connect', 'watch']);

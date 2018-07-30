@@ -1,0 +1,119 @@
+// Gid Size Variables
+
+    $one: 8.33333333%;
+    $two: 16.66666667%;
+    $three: 25%;
+    $four: 33.33333333%;
+    $five: 41.66666667%;
+    $six: 50%;
+    $seven: 58.33333333%;
+    $eigth: 66.66666667%;
+    $nine: 75%;
+    $ten: 83.33333333%;
+    $eleven: 91.66666667%;
+    $twelve: 100%;
+
+
+
+// Variables
+
+	$gutter-width: 1rem;
+	$outer-margin: 2rem;
+	$gutter-compensation: calc((var($gutter-width) * 0.5) * -1);
+	$half-gutter-width: calc((var($gutter-width) * 0.5));
+	$xs-min: 30;
+	$sm-min: 48;
+	$md-min: 64;
+	$lg-min: 75;
+	$screen-xs-min: $xs-min em;
+	$screen-sm-min: $sm-min em;
+	$screen-md-min: $md-min em;
+	$screen-lg-min: $lg-min em;
+	$container-sm: $sm-min + $gutter-width;
+	$container-md: $md-min + $gutter-width;
+	$container-lg: $lg-min + $gutter-width;
+
+// View Variables
+
+    $sm-viewport: "only screen and (min-width: 48em)";
+    $md-viewport: "only screen and (min-width: 64em)";
+    $lg-viewport: "only screen and (min-width: 75em)";
+
+
+// Col Mixin
+
+@mixin col($xs, $sm, $md, $lg) {
+
+      flex-basis: $xs;
+      max-width: $xs;
+      box-sizing: border-box;
+      flex: 0 0 auto;
+
+	@media #{$sm-viewport} {
+      flex-basis: $sm;
+      max-width: $sm;
+      box-sizing: border-box;
+      flex: 0 0 auto;
+  }
+	@media #{$md-viewport} {
+      flex-basis: $md;
+      max-width: $md;
+      box-sizing: border-box;
+      flex: 0 0 auto;
+  }
+  
+	@media #{$lg-viewport} {
+      flex-basis: $lg;
+      max-width: $lg;
+      box-sizing: border-box;
+      flex: 0 0 auto;
+  }
+}
+
+// Row Mixin 
+
+@mixin row() {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // Missing gutter
+}
+
+// Container Mixin
+
+@mixin container() {
+
+  margin-right: auto;
+  margin-left: auto;
+
+	@media #{$sm-viewport} {
+	  width: $container-sm;
+	}
+
+	@media #{$md-viewport} {
+	  width: $container-md;
+	}
+
+	@media #{$lg-viewport} {
+	  width: $container-lg;
+	}
+}
+
+// Fluid Contanier Mixin
+
+@mixin container-fluid() {
+  padding-right: $outer-margin;
+  padding-left: $outer-margin;
+	@include container();
+}
+
+
+// Not sure what do with this
+
+@mixin col-xs() {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
