@@ -1,0 +1,162 @@
+@mixin flex {
+    // write the css here
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin m-0 {
+    margin:0px !important;
+}
+
+// Add Color
+
+
+
+$red:#e57b7b;
+// @import 'base/framework';
+@import 'base/base';
+// Caculates the responsive sizes
+@import 'base/responsive';
+@import 'base/variables';
+@import 'module/nav';
+@import 'module/steps';
+@import 'module/countdown';
+@import 'module/cta';
+@import 'module/testimonials';
+@import 'module/warning';
+@import 'module/important';
+@import 'module/congrats';
+@import 'module/perbottle';
+@import 'module/retail';
+@import 'module/guarantee';
+@import 'module/notice';
+@import 'module/buttons';
+// Base Colors
+
+.bg__turq {
+    background:$turq;
+}
+
+.bg__blue {
+    background:$dark-blue;
+}
+
+.bg__green {
+    background:$green;
+}
+
+.bg__lightgrey {
+    background:$lightgrey;
+}
+
+.bg__white {
+    background:$white;
+}
+
+.sp__50 {
+    display: block;
+    height: 50px;
+}
+.sp__25 {
+    display: block;
+    height: 25px;
+}
+
+.c__white {
+    color:white;
+}
+
+.c__red {
+    color:red;
+}
+.c__turq {
+    color:$turq;
+}
+.c__blue {
+    color:$green;
+}
+
+.c__grey {
+    color:$grey
+}
+.pd__10 {
+    padding:10px;
+}
+.pd__20 {
+    padding:20px;
+}
+.pd__50 {
+    padding:50px;
+}
+
+
+.br__5 {
+
+    border-radius:5px;
+
+}
+
+
+.shadow {
+        box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+    }
+
+.bg__white {
+
+        background:white;
+    }
+
+.t__h1, h1 {
+
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: -.2px;
+    line-height: 1.21;
+    margin: 0 0 10px;
+}
+
+.c__green {
+    color:$green;
+}
+
+.t__h2 {
+
+}
+
+.t__upper{
+
+    text-transform:uppercase;
+}
+
+.card {
+    border-bottom:5px solid $green;
+}
+
+p, h1, h2, h3, h4, h5 {
+
+    margin:0px
+}
+
+.border-dotted {
+
+    border: 2px dotted black;
+    padding: 20px;
+    text-align: center;
+}
+p {
+    margin: 0 0 20px;
+    line-height: 1.8;
+    font-size:18px;
+}
+.backing {
+
+    border: 1px solid #333;
+    border-radius:100px;
+    padding: 10px 20px;
+    width:20%;
+    font-weight:600;
+    color:#333;
+    margin: 0 auto 0;
+
+
+}

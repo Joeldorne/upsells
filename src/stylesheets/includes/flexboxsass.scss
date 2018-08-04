@@ -117,3 +117,39 @@
   flex-basis: 0;
   max-width: 100%;
 }
+
+// Alignment
+
+@mixin alignment($xs, $sm, $md, $lg) {
+
+    -webkit-box-pack: $xs;
+    -ms-flex-pack: $xs;
+    justify-content: $xs;
+    text-align: $xs;
+
+	@media #{$sm-viewport} {
+        -webkit-box-pack: $sm;
+        -ms-flex-pack: $sm;
+        justify-content: $sm;
+        text-align: $sm;
+  }
+	@media #{$md-viewport} {
+        -webkit-box-pack: $md;
+        -ms-flex-pack: $md;
+        justify-content: $md;
+        text-align: $md;
+  }
+  
+	@media #{$lg-viewport} {
+        -webkit-box-pack: $lg;
+        -ms-flex-pack: $lg;
+        justify-content: $lg;
+        text-align: $lg;
+  }
+}
+
+
+$center: center, center, center, center;
+$start: start, start, flex-start, start;
+$end: end, end, flex-end, end;
+

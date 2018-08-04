@@ -1,0 +1,59 @@
+// Steps Icon 
+.step i {
+    padding-right:10px !important;
+
+}
+/* Steps Code */
+
+.steps {
+    border:2px solid $turq;
+    border-radius: 200px;
+    overflow: hidden;
+    color:$turq;
+}
+
+.step {
+    border-right: 2px solid $turq;
+    background:$white;
+
+}
+
+.step:last-of-type {
+
+    border:none;
+}
+
+.step p {
+
+    font-size: 14px !important;
+    font-weight:900;
+
+}
+.current-step {
+    background:$turq;
+    color:$white;
+}
+
+.step-dot {
+  	height: 10px;
+    width: 10px;
+    background: $turq;
+    display: inline-block;
+    border-radius: 100px;
+  	margin-right:10px;
+  	top: -1px;
+  	position:relative;
+}
+
+// State
+
+.current-step .step-dot { 
+ 	background:$white;
+}
+
+@media only screen and (max-width: 768px) {
+    .steps {
+       border-radius: 5px;
+       border-right:0px;
+    }
+}
