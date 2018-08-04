@@ -5,32 +5,25 @@
 }
 /* Steps Code */
 
-.steps {
-    border:2px solid $turq;
-    border-radius: 200px;
-    overflow: hidden;
-    color:$turq;
-}
-
 .step {
-    border-right: 2px solid $turq;
-    background:$white;
-
+    padding:20px;
+    border:1px solid #333;
+    overflow: hidden;
+    color:#333;
 }
 
-.step:last-of-type {
-
-    border:none;
-}
 
 .step p {
 
     font-size: 14px !important;
-    font-weight:900;
+    font-weight:600;
+    margin:0px !important;
+    text-transform:uppercase;
+
 
 }
 .current-step {
-    background:$turq;
+    background:#333;
     color:$white;
 }
 
