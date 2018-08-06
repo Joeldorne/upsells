@@ -1,38 +1,32 @@
 include mixins/button
 include includes/head
-include includes/nav
 body
-    // Done need to check em`
-    // include includes/steps
-    .row.center-xs.mysteps.bg__lightgrey
-        .col-xs-12
-            .sp__25
-            ul
-                li.current Step 1
-                li.current Step 2
-                li.current Step 3
-
-            .sp__25
-    .row
-        .container
-            .col-xs-8.center-xs
+    include includes/nav
+    include includes/steps 
+    // Section
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
                 .sp__50
 
-                h1.t__h1 Wait! Before you continue check out this one-time offer
 
+                .div
+                    h1.t__h1 Wait! Before you continue check out this one-time offer
 
                 .sp__25
 
-                p.border-dotted.bg__lightgrey
-                    b Congratulations! 
-                    | Your Provitalize order is on its way. 
-                    | Soon you can experience how its unique formula can rebalance your gut bacteria andturn more fat into fuel. Yet…
+                div.border-dotted.bg__lightgrey
+                    p.mb_0
+                        b Congratulations! 
+                        | Your Provitalize order is on its way. 
+                        | Soon you can experience how its unique formula can rebalance your gut bacteria andturn more fat into fuel. Yet…
                 .sp__25
 
-    .row
-        .container
-            .col-xs-8.center-xs
 
+    // Section
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
 
                 h1.t__h1 How would like to send your weight loss into overdrive?
                 .sp__25
@@ -56,14 +50,15 @@ body
 
                 .sp__50
 
-    .row.bg__blue.c__white
+    // Section
+    .bg__blue.c__white
         .container
             .row.center-xs
-                .col-xs-8
+                .col-xs-11.col-md-8
 
                     .sp__50
 
-                    p.backing.backing-light Introducing… 
+                    .backing.backing-light Introducing… 
                     .sp__25
                     h1.t__h1 Previtalize
 
@@ -81,10 +76,10 @@ body
 
                     .sp__50
     // Section 
-    .row.bg__white
+    .bg__white
         .container
             .row.center-xs
-                .col-xs-8
+                .col-xs-11.col-md-8
                     .sp__50
 
                     h1.t__h1 What’s Previtalize?
@@ -139,7 +134,7 @@ body
                         | boost Provitalize’s and gain optimal fat burning power.
 
     // Section 
-    .row.bg__white
+    .bg__blue.c__white
         .container
             .row.center-xs
                 .col-md-8.col-xs-11
@@ -161,69 +156,70 @@ body
 
                         .sp__50
 
-                        .col-xs-12
-                            .row.start-xs.pd__10
-                                div.bg__white.pd__50.br__5.shadow.card
+                        .div.c__black
+                            .col-xs-12
+                                .row.pd__10
+                                    div.bg__white.pd__50.br__5.shadow.card
 
-                                    h3.t__h3.t__upper 1. Accelerates Weight Loss 23%
+                                        h3.t__h3.t__upper 1. Accelerates Weight Loss 23%
 
-                                    .sp__25
+                                        .sp__25
 
-                                    p.t__small 
-                                        | For fat to be broken down and burned off as energy it also has to be
-                                        | “oxidized”. Research by Higgins, from BioMed Central, found that the
-                                        | super starches found in Previtalize can increase fat oxidation and
-                                        | accelerate fat burning by as much as 23%.(1)
-                        .col-xs-12
-                            .row.start-xs.pd__10
-                                div.bg__white.pd__50.br__5.shadow.card
+                                        p.t__small 
+                                            | For fat to be broken down and burned off as energy it also has to be
+                                            | “oxidized”. Research by Higgins, from BioMed Central, found that the
+                                            | super starches found in Previtalize can increase fat oxidation and
+                                            | accelerate fat burning by as much as 23%.(1)
+                            .col-xs-12
+                                .row.pd__10
+                                    div.bg__white.pd__50.br__5.shadow.card
 
-                                    h3.t__h3 2. Slashes Stress Hormone Cortisol Levels
+                                        h3.t__h3 2. Slashes Stress Hormone Cortisol Levels
 
-                                    .sp__25
+                                        .sp__25
 
-                                    p 
-                                        | When you feel stressed it releases the stress hormone cortisol. This
-                                        | can wreak havoc to your metabolism and ability to turn stored fat into
-                                        | energy. Even worse, cortisol can cause you to comfort eat junk foods,
-                                        | making you even more overweight.
-                                    p
-                                        | Previtalize contains ingredients found in studies to help drain cortisol,
-                                        | banish stress and improve your fat burning potential all at the
-                                        | same time.(2)
-                        .col-xs-12
-                            .row.start-xs.pd__10
-                                div.bg__white.pd__50.br__5.card.shadow
+                                        p 
+                                            | When you feel stressed it releases the stress hormone cortisol. This
+                                            | can wreak havoc to your metabolism and ability to turn stored fat into
+                                            | energy. Even worse, cortisol can cause you to comfort eat junk foods,
+                                            | making you even more overweight.
+                                        p
+                                            | Previtalize contains ingredients found in studies to help drain cortisol,
+                                            | banish stress and improve your fat burning potential all at the
+                                            | same time.(2)
+                            .col-xs-12
+                                .row.pd__10
+                                    div.bg__white.pd__50.br__5.card.shadow
 
 
-                                    h3  3. Lifts Your Happiness Hormone Serotonin
+                                        h3  3. Lifts Your Happiness Hormone Serotonin
 
-                                    .sp__25
+                                        .sp__25
 
-                                    p
-                                        | As stress goes down, happiness goes up. Previtalize helps this happen
-                                        | by releasing more of the feel good hormone serotonin to brighten
-                                        | your mood.(2)
-                                    p
-                                        | When you feel happier, you feel more like going for a stroll with your
-                                        | partner...pulling on your sneakers and going for a run…and doing all
-                                        | the activities that will help Provitalize do its job of burning off fat as
-                                        | energy.
+                                        p
+                                            | As stress goes down, happiness goes up. Previtalize helps this happen
+                                            | by releasing more of the feel good hormone serotonin to brighten
+                                            | your mood.(2)
+                                        p
+                                            | When you feel happier, you feel more like going for a stroll with your
+                                            | partner...pulling on your sneakers and going for a run…and doing all
+                                            | the activities that will help Provitalize do its job of burning off fat as
+                                            | energy.
 
-                        .col-xs-12
-                            .row.start-xs.pd__10
-                                div.bg__white.pd__50.br__5.card.shadow
+                            .col-xs-12
+                                .row.pd__10
+                                    div.bg__white.pd__50.br__5.card.shadow
 
-                                    h3 4. Induces Blissful Hours of Sleep
+                                        h3 4. Induces Blissful Hours of Sleep
 
-                                    .sp__25
+                                        .sp__25
 
-                                    p
-                                        | Sleep is the ultimate performance enhancer. It helps to lower stress, lift
-                                        | mood, recharge your energy, and it’s vital for preventing the onset of
-                                        | chronic disease. Previtalize contains an ingredient backed by science
-                                        | to help improve sleep, so you can help your body gain all round
-                                        | better health.(2)
+                                        p
+                                            | Sleep is the ultimate performance enhancer. It helps to lower stress, lift
+                                            | mood, recharge your energy, and it’s vital for preventing the onset of
+                                            | chronic disease. Previtalize contains an ingredient backed by science
+                                            | to help improve sleep, so you can help your body gain all round
+                                            | better health.(2)
 
                         .sp__25
                         p 
@@ -232,20 +228,20 @@ body
                             | stomach a dream combination of gut rebalancing nutrition.
 
                         .sp__25
-        // section
-    .row.bg__lightgrey
+    // section
+    .bg__lightgrey
         .container
             .row.center-xs
-                .col-xs-8
+                .col-xs-11.col-xs-11
                     .sp__50
                     h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
                     p 87% of customers add on with this offer
                     .sp__25
-                    +order-button('Button Text').shadow
+                    +order-button('Add to my order - $97').shadow
                     .sp__50
 
     // Section 
-    .row.center-xs.bg__white
+    .center-xs.bg__white
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
@@ -276,10 +272,10 @@ body
     // Reviews Collected by Okendo
 
     // Section 
-    .row.bg__turq.c__white
+    .bg__turq.c__white
         .container
             .row.middle-xs.center-xs
-                .col-xs-8
+                .col-xs-11.col-md-8
                     .sp__50
                     img(src="img/guarantee.png" alt="Image Title" style="width:30%;")
                     .sp__25
@@ -296,22 +292,21 @@ body
                     .sp__50
 
     // Section
-    .row
-        .container
-            .row.center-xs
-                .col-xs-8
-                    .sp__50
-                    h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                    .sp__25
-                    +order-button('Add to my order - $95.00')
-                    .sp__50
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+                .sp__50
+                h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                .sp__25
+                +order-button('Add to my order - $95.00')
+                .sp__50
 
 
     // Section
-    .row.bg__lightgrey
+    .bg__lightgrey
         .container
             .row.center-xs
-                .col-xs-8
+                .col-xs-11.col-md-8
                     .sp__50
                     div.backing Important
                     .sp__25
@@ -352,38 +347,40 @@ body
 
                     .sp__50
     // Section
-    .row
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+                .sp__50
+
+                h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                p Add on available on this page only
+                +order-button('Add to my order - $95.00')
+                .sp__50
+                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+                .sp__50
+
+
+    // Section
+    .bg__lightgrey
         .container
             .row.center-xs
-                .col-xs-8
-                    .sp__50
+                .col-xs-11.col-md-8
 
-                    h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                    p Add on available on this page only
-                    +order-button('Add to my order - $95.00')
-                    .sp__50
-                    img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
-                    .sp__50
+                    .sp__40
 
-
-    .row.bg__lightgrey
-        .container
-            .col-xs-12
-
-                .sp__40
-
-                .row
                     i.fa.fa-graduation-cap.fa-4x
                     h1.t__h1 References
-                ol 
-                    li 
-                        p Higgins JA, Higbee DR, Donahoo WT, Brown IL, Bell ML, Bessesen
-                        | DH. Resistant starch consumption promotes lipid oxidation. Nutrition &amp;
-                        | Metabolism. 2004;1:8. doi:10.1186/1743-7075-1-8.
-                    li 
-                        p Yano, Jessica M, et al. Indigenous Bacteria from the Gut Microbiota
-                        | Regulate Host Serotonin Biosynthesis. Indigenous Bacteria from the
-                        | Gut Microbiota Regulate Host Serotonin Biosynthesis. Cell, 161 (2). pp.
-                        | 264-276.
+                    .sp__25
+                    ul 
+                        li 
+                            b Higgins JA, Higbee DR, Donahoo WT, Brown IL, Bell ML, Bessesen
 
-                .sp__40
+                            p DH. Resistant starch consumption promotes lipid oxidation. Nutrition &amp;
+                                | Metabolism. 2004;1:8. doi:10.1186/1743-7075-1-8.
+                        li 
+                            b Yano, Jessica M, et al. Indigenous Bacteria from the Gut Microbiota
+                            p Regulate Host Serotonin Biosynthesis. Indigenous Bacteria from the
+                                | Gut Microbiota Regulate Host Serotonin Biosynthesis. Cell, 161 (2). pp.
+                                | 264-276.
+
+                    .sp__40

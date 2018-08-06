@@ -39,7 +39,7 @@ gulp.task('connect', function() {
     root: 'dist/',
     name: 'Dist App',
     root: 'dist',
-    port: 8002,
+    port: 8001,
     livereload: true
   })
 });
