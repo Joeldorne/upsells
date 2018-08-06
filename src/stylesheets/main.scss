@@ -10,10 +10,18 @@
 
 // Add Color
 
+// Framework over
+.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
+    padding:0px;
+}
+.row {
+    margin-right: 0rem !important;
+   margin-left: 0rem !important; 
+}
 
 
 $red:#e57b7b;
-// @import 'base/framework';
+@import 'includes/flexboxsass.scss';
 @import 'base/base';
 // Caculates the responsive sizes
 @import 'base/responsive';
@@ -154,10 +162,8 @@ p {
     border: 1px solid #333;
     border-radius:100px;
     padding: 10px 20px;
-    width:20%;
     font-weight:600;
     color:#333;
-    margin: 0 auto 0;
 
 
 }
@@ -231,14 +237,6 @@ padding: 0;
 margin: 0;
 }
 
-// Framework over
-.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
-    padding:0px !important;
-}
-.row {
-    margin-right: 0rem !important;
-   margin-left: 0rem !important; 
-}
 
 // mb_0
 .mb_0 {
@@ -247,4 +245,48 @@ margin: 0;
 
 .c__black {
     color:#333;
+}
+
+.c__blue {
+    color:$dark-blue;
+}
+
+// MD 
+	@media #{$sm-viewport} {
+        .mysteps {
+            width:40em;
+        }
+    }
+.pb__50 {
+    padding-bottom:50px;
+}
+
+.pd__20 {
+    padding:20px;
+}
+
+.mt__20 {
+
+    margin-top:20px;
+}
+
+i.fa-truck {
+    display: inline-block;
+    background: $turq;
+    padding: 20px;
+    border-radius: 100px;
+    color: white;
+
+}
+
+.mb__0 {
+    margin-bottom:0px;
+}
+
+.m__0 { 
+    margin:0px;
+}
+
+.pd__25 {
+    padding:25px;
 }

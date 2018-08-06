@@ -14,20 +14,5 @@
     border: 2px dotted $turq;
 }
 
-.fa-truck {
-    &:before {
-        background: $turq;
-        padding: 20px;
-        border-radius: 100px;
-        color: white;
-    }
-
-    // Mobile XS
-
-    @include respond-to($xs) {
-    margin-bottom:25px;
-    margin-top:25px;
-  } 
-}
 
 
