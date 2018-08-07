@@ -1,29 +1,21 @@
 include mixins/button
+
 include includes/head
 body
     include includes/nav
     include includes/steps 
     // Section
-    .container
+    .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
-                .sp__50
+
+                h1.mb__40 Wait! Before you continue check out this one-time offer
 
 
-                .div
-                    h1.t__h1 Wait! Before you continue check out this one-time offer
-
-                .sp__25
-
-
-
-
-
-    // Section
-    .container
-        .row.center-xs
+        // Box
+        .row.center-xs.mb__40
             .col-xs-11.col-md-8.bg__lightgrey.border-dotted
-                i.fa.fa-truck.fa-2x.mt__20
+                i.fa.fa-truck.fa-4x.mt__20
                 .row.center-xs.mt__20
                     p
                         b Congratulations! 
@@ -32,17 +24,11 @@ body
                         | turn more fat into fuel. Yet…
 
 
-
-
-    .sp__40
-
-
-    // Section
-    .container
+        // Section
         .row.center-xs
             .col-xs-11.col-md-8
 
-                h1.t__h1 How would like to send your weight loss into overdrive?
+                h1 How would like to send your weight loss into overdrive?
                 .sp__25
                 include mixins/countdown
                 .sp__25
@@ -62,21 +48,19 @@ body
                     | While improving your sleep, lowering stress, and lifting your mood at the same time?
 
 
-                .sp__50
 
     // Section
-    .bg__blue.c__white
+    .bg__blue.c__white.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    .sp__50
 
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            .backing.backing-light.c__blue.bg__white Introducing… 
-                    .sp__25
-                    h1.t__h1 Previtalize
+                            h3.ribbon.bg__white.c__blue.mb__40 Introducing...
+                    h1.mb__40 Previtalize
+
 
                     p.t__small 
                         | After months of formulation and testing,
@@ -90,17 +74,13 @@ body
                         | improving mood, increasing sleep quality
                         | and more.
 
-                    .sp__50
     // Section 
-    .bg__white
+    .section__80.bg__lightgrey
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
-                    .sp__50
 
-                    h1.t__h1 What’s Previtalize?
-
-                    .sp__25
+                    h1.mb__40 What’s Previtalize?
 
                     p 
                         | Whereas Provitalize is a “PRObiotic”, Previtalize is a “PREbiotic”.
@@ -133,60 +113,55 @@ body
                         | So via this page only you can get a 
                         b 45% DISCOUNT off the recommended retail price for Previtalize.
 
-                    .sp__50
 
+    .section__80.bg__white
+        .container
+            .row.center-xs
+                .col-xs-11.col-md-8
 
                     img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
-                    .sp__25
-                    h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                    .sp__25
+                    h1.mb__40.mt__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
                     +order-button('Add to cart - $95.00')
 
-                    .sp__25
 
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            div.backing
+                            div.important.mb__40.mt__40
                                 p.mb__0 Recommended retail $173
 
-                    .sp__25
                     p.border-dotted
                         | *For a four month supply, this works out at just $0.78 a day to turbo-
                         | boost Provitalize’s and gain optimal fat burning power.
 
     // Section 
-    .bg__blue.c__white
+    .bg__blue.c__white.section__80
         .container
             .row.center-xs
                 .col-md-8.col-xs-12
 
-                    // Spacer
-                    .sp__50
 
                     .col-xs-12.center-xs
 
-                        h1.t__h1 Bigger Health Gains for Your Mind &amp; Body
+                        h1.mb__40 Bigger Health Gains for Your Mind &amp; Body
 
-                        .sp__50
 
-                        p.t__small 
+                        p.t__small.mb__40
                             | Previtalize is backed by science as a powerful formula that helps to
                             | reduce stress, improve mood, and to help you sleep better - ALL while
                             | turning up the fat burning power of Provitalize.
                             | Based on clinical studies of its ingredients, Previtalize:
 
-                        .sp__50
 
                         .div.c__black
                             .col-xs-12
                                 .row.pd__10
-                                    div.bg__white.pd__25.br__5.shadow.card
+                                    div.bg__white.pd__25.card.shadow
 
-                                        h3.t__h3.t__upper 1. Accelerates Weight Loss 23%
+                                        h3.f__up 1. Accelerates Weight Loss 23%
 
                                         .sp__25
 
-                                        p.t__small 
+                                        p.t__small.mb__0
                                             | For fat to be broken down and burned off as energy it also has to be
                                             | “oxidized”. Research by Higgins, from BioMed Central, found that the
                                             | super starches found in Previtalize can 
@@ -194,37 +169,37 @@ body
                                             | (1)
                             .col-xs-12
                                 .row.pd__10
-                                    div.bg__white.pd__25.br__5.shadow.card
+                                    div.bg__white.pd__25.card.shadow
 
-                                        h3.t__h3 2. Slashes Stress Hormone Cortisol Levels
+                                        h3.f__up 2. Slashes Stress Hormone Cortisol Levels
 
                                         .sp__25
 
-                                        p 
+                                        p.mb__0 
                                             | When you feel stressed it releases the stress hormone cortisol. This
                                             | can wreak havoc to your metabolism and ability to turn stored fat into
                                             | energy. Even worse, cortisol can cause you to comfort eat junk foods,
                                             | making you even more overweight.
-                                        p
+                                        p.mb__0
                                             | Previtalize contains ingredients found in studies to 
                                             b help drain cortisol, banish stress and improve your fat burning potential 
                                             | all at the
                                             | same time.(2)
                             .col-xs-12
                                 .row.pd__10
-                                    div.bg__white.pd__25.br__5.card.shadow
+                                    div.bg__white.pd__25.card.shadow
 
 
-                                        h3  3. Lifts Your Happiness Hormone Serotonin
+                                        h3.f__up  3. Lifts Your Happiness Hormone Serotonin
 
                                         .sp__25
 
-                                        p
+                                        p.mb__0
                                             | As stress goes down, happiness goes up. Previtalize helps this happen by 
                                             b releasing more of the feel good hormone serotonin 
                                             | to brighten
                                             | your mood.(2)
-                                        p
+                                        p.mb__0
                                             | When you feel happier, you feel more like going for a stroll with your
                                             | partner...pulling on your sneakers and going for a run…and doing all
                                             | the activities that will help Provitalize do its job of burning off fat as
@@ -232,13 +207,13 @@ body
 
                             .col-xs-12
                                 .row.pd__10
-                                    div.bg__white.pd__25.br__5.card.shadow
+                                    div.bg__white.pd__25.card.shadow
 
-                                        h3 4. Induces Blissful Hours of Sleep
+                                        h3.f__up 4. Induces Blissful Hours of Sleep
 
                                         .sp__25
 
-                                        p
+                                        p.mb__0
                                             | Sleep is the ultimate performance enhancer. It helps to lower stress, lift
                                             | mood, recharge your energy, and it’s vital for preventing the onset of
                                             | chronic disease. Previtalize contains an ingredient backed by science
@@ -252,27 +227,24 @@ body
                             | all round health. And when you take it with Provitalize you give your
                             | stomach a dream combination of gut rebalancing nutrition.
 
-                        .sp__25
     // section
-    .bg__lightgrey
+    .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-xs-11
-                    .sp__50
-                    h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                    p 87% of customers add on with this offer
-                    .sp__25
+
+                    h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+
+                    p.mb__40 87% of customers add on with this offer
+
                     +order-button('Add to my order - $97').shadow
-                    .sp__50
 
     // Section 
-    .center-xs.bg__white
+    .center-xs.bg__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
-                    .sp__50
-                    h1.t__h1 Better than Any Other Prebiotic
-                    .sp__25
+                    h1.mb__40 Better than Any Other Prebiotic
                     p When developing Provitalize, we discovered that most prebiotics create
                         | starches that get digested the moment they reach the stomach. At best,
                         | this makes them unusable. At worst, they can get turned into fat,
@@ -293,20 +265,16 @@ body
                         | Previtalize is also manufactured to USA standards. It contains ZERO
                         | preservatives, no artificial colors or flavors, no wheat or gluten, or any
                         | artificial nasties. Just healthy ingredients as nature intended.
-                    .sp__50
 
     // Reviews Collected by Okendo
 
     // Section 
-    .bg__turq.c__white
+    .bg__turq.c__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
-                    .sp__50
-                    img(src="img/guarantee.png" alt="Image Title" style="width:30%;")
-                    .sp__25
-                    h1.t__h1 Try it Risk Free with a 60 Day Money-Back Guarantee!
-                    .sp__25
+                    img(src="img/guarantee.png" alt="Image Title" style="width:300px;")
+                    h1.mb__40.mt__40 Try it Risk Free with a 60 Day Money-Back Guarantee!
                     p We’re so confident you’ll love how Previtalize accelerates the fat
                         | burning potential of Provitalize while helping to reduce your anxiety, lift
                         | your mood, and improve your sleep that we’re offering a no questions
@@ -315,89 +283,80 @@ body
                     p Try Previtalize for 60 days. And if you notice no reduction in your
                         | weight or are unsatisfied for any reason at all, your purchase will be
                         | refunded in full.
-                    .sp__50
 
     // Section
-    .container
+    .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
-                .sp__50
-                h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                .sp__25
+                h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
                 +order-button('Add to my order - $95.00')
-                .sp__50
 
 
     // Section
-    .bg__lightgrey
+    .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
-                    .sp__50
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            div.backing Important
-                    .sp__25
-                    h1.t__h1 Your 40% Discount is Available Only from this Page
-                    .sp__25
 
-                    p 
-                        | As you’ve purchased Provitalize, you’ve already proven you’re 
-                        | someone who takes their health seriously. That you’re eager to reverse
-                        | the damage done to your microbiome by antibiotics, processed food,
-                        | and all the chemicals awash in our world.
-                    p 
-                        | Provitalize is step one in your journey towards recovering the health of
-                        | your gut. Step two is adding the high octane fuel of Previtalize to send
-                        | your fat burning into overdrive.
-                    p
-                        | Just imagine how it will feel to see your slender body emerging in the
-                        | mirror…your face slimmer and tighter...your clothes baggier.
-                        | And just imagine that moment when you meet friends for the first time
-                        | in a few weeks and the 
-                        b look of surprise on their faces when they see how much slimmer and healthier you look.
-                    p
-                        | That would be really something, wouldn’t it?
-                        | With Provitalize on its way to you, you’re already on your path towards
-                        | achieving your dream body.
-                    p
-                        b How about turning on the jet boosters and accelerating your journey?
-                        
-                    p
-                        | This is what Previtalize is designed to do. And we want you to get the
-                        | complete gut health package with a huge 40% discount off the normal
-                        | price.
-                    p
-                        | This discount is available on this page only. Then it will be gone
-                        | forever. So take that extra step and add on to your order to include
-                        | Previtalize. In a few weeks you’ll be so happy you did:
+                            div.important.mb__40 Important
 
-                    .sp__50
+                        h1.mb__40 Your 40% Discount is Available Only from this Page
+
+                        p 
+                            | As you’ve purchased Provitalize, you’ve already proven you’re 
+                            | someone who takes their health seriously. That you’re eager to reverse
+                            | the damage done to your microbiome by antibiotics, processed food,
+                            | and all the chemicals awash in our world.
+                        p 
+                            | Provitalize is step one in your journey towards recovering the health of
+                            | your gut. Step two is adding the high octane fuel of Previtalize to send
+                            | your fat burning into overdrive.
+                        p
+                            | Just imagine how it will feel to see your slender body emerging in the
+                            | mirror…your face slimmer and tighter...your clothes baggier.
+                            | And just imagine that moment when you meet friends for the first time
+                            | in a few weeks and the 
+                            b look of surprise on their faces when they see how much slimmer and healthier you look.
+                        p
+                            | That would be really something, wouldn’t it?
+                            | With Provitalize on its way to you, you’re already on your path towards
+                            | achieving your dream body.
+                        p
+                            b How about turning on the jet boosters and accelerating your journey?
+                            
+                        p
+                            | This is what Previtalize is designed to do. And we want you to get the
+                            | complete gut health package with a huge 40% discount off the normal
+                            | price.
+                        p
+                            | This discount is available on this page only. Then it will be gone
+                            | forever. So take that extra step and add on to your order to include
+                            | Previtalize. In a few weeks you’ll be so happy you did:
+
     // Section
-    .container
+    .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
-                .sp__50
 
-                h1.t__h1 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                p Add on available on this page only
+                h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                p.mb__40 Add on available on this page only
                 +order-button('Add to my order - $95.00')
-                .sp__50
-                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
-                .sp__50
+                img.mt__40(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
 
 
     // Section
-    .bg__lightgrey
+    .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    .sp__40
 
                     i.fa.fa-graduation-cap.fa-4x
-                    h1.t__h1 References
-                    .sp__25
+
+                    h1.mb__40 References
+
                     ul 
                         li 
                             b Higgins JA, Higbee DR, Donahoo WT, Brown IL, Bell ML, Bessesen
@@ -410,4 +369,3 @@ body
                                 | Gut Microbiota Regulate Host Serotonin Biosynthesis. Cell, 161 (2). pp.
                                 | 264-276.
 
-                    .sp__40

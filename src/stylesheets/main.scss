@@ -1,292 +1,127 @@
-@mixin flex {
-    // write the css here
-    display: -webkit-flex;
-    display: flex;
-}
+// #1 === Includes ===
 
-@mixin m-0 {
-    margin:0px !important;
-}
+    // reset Flexbox Grid
+    @import 'base/framework_resets';
+    // Normalize.css
+    @import 'includes/normalize.scss';
+    // My own version of Flexbox Grid in Sass
+    @import 'includes/flexboxsass.scss';
+    // Set responsive @content for my Grid
+    @import 'base/responsive';
 
-// Add Color
+// === Base ===
 
-// Framework over
-.col-xs, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-offset-0, .col-xs-offset-1, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12 {
-    padding:0px;
-}
-.row {
-    margin-right: 0rem !important;
-   margin-left: 0rem !important; 
-}
+    @import 'base/base';
+    // $var colors
+    @import 'base/color_variables';
 
+// === Modules ===
 
-$red:#e57b7b;
-@import 'includes/flexboxsass.scss';
-@import 'base/base';
-// Caculates the responsive sizes
-@import 'base/responsive';
-@import 'base/variables';
-@import 'module/nav';
-@import 'module/steps';
-@import 'module/countdown';
-@import 'module/cta';
-@import 'module/testimonials';
-@import 'module/warning';
-@import 'module/important';
-@import 'module/congrats';
-@import 'module/perbottle';
-@import 'module/retail';
-@import 'module/guarantee';
-@import 'module/notice';
-@import 'module/buttons';
-// Base Colors
+    @import 'module/nav';
+    @import 'module/countdown';
+    @import 'module/buttons';
+    @import 'module/steps';
+    @import 'base/margin';
 
-.bg__turq {
-    background:$turq;
-}
+    // Block Spacers
+    @import 'base/spacers';
+    // Padding
+    @import 'base/padding';
+    // Theme Background Colors
+    @import 'base/background_color';
 
-.bg__blue {
-    background:$dark-blue;
-}
+    // c__$color classes
 
-.bg__green {
-    background:$green;
-}
+    // Colors = c__*
+    @import 'base/colors';
 
-.bg__lightgrey {
-    background:$lightgrey;
-}
+    @import 'base/typography';
 
-.bg__white {
-    background:$white;
-}
+// Random Code
 
-.sp__50 {
-    display: block;
-    height: 50px;
-}
-.sp__25 {
-    display: block;
-    height: 25px;
-}
+    // Card
 
-.c__white {
-    color:white !important;
-}
+    .card {
 
-.c__red {
-    color:red;
-}
-.c__turq {
-    color:$turq;
-}
-.c__blue {
-    color:$green;
-}
+        border-radius:5px;
 
-.c__grey {
-    color:$grey
-}
-.pd__10 {
-    padding:10px;
-}
-.pd__20 {
-    padding:20px;
-}
-.pd__50 {
-    padding:50px;
-}
-
-
-.br__5 {
-
-    border-radius:5px;
-
-}
-
-
-.shadow {
-        box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
     }
 
-.bg__white {
+    // Shadows
 
-        background:white;
+    .shadow {
+
+            box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
     }
 
-.t__h1, h1 {
+    // Dotted Border
+    .border-dotted {
 
-    font-weight: 400;
-    font-size: 44px;
-    letter-spacing: -.2px;
-    line-height: 1.21;
-    margin: 0 0 10px;
-}
-
-.c__green {
-    color:$green;
-}
-
-.t__h2 {
-
-}
-
-.t__upper{
-
-    text-transform:uppercase;
-}
-
-.card {
-    // No code
-}
-
-
-p, h1, h2, h3, h4, h5 {
-
-    margin:0px
-}
-
-.border-dotted {
-
-    border: 2px dotted black;
-    padding: 20px;
-    text-align: center;
-}
-p {
-    margin: 0 0 20px;
-    line-height: 1.8;
-    font-size:18px;
-}
-.backing {
-
-    border: 1px solid #333;
-    border-radius:100px;
-    padding: 10px 20px;
-    font-weight:600;
-    color:#333;
-
-
-}
-
-.backing-light {
-
-    color:white;
-    border-color:white;
-}
-
-// Steps
-.mysteps {
-    width:20em;
-    // Make this reponsive
-}
-
-.mysteps ul {
-  width: 100%;
-  display:table;
-}
-
-.mysteps li {
-    display: inline-block;
-    width:25%;
-    position:relative;
-    padding-top:50px;
-    text-align:center;
-    font-weight:600;
-    text-transform: uppercase;
-    // Color li Text
-    color: #333;
-    letter-spacing:.1em;
-
-    &:before {
-        /*  circle/dot*/
-        content:'';
-        width:30px;
-        height:30px;
-        // color bar
-        background:#333;
-        position: absolute;
-        top:0;
-        left:calc(50% - 15px);
-        border-radius: 100%;
-        z-index:6;  
+        border: 2px dotted black;
+        padding: 20px;
+        text-align: center;
     }
-    &:after {
-        /*line*/
-        content:'';
-        width:100%;
-        height:1px;
-        background:#333;
-        position: absolute;
-        right:calc(50% - 15px);
-        top:15px;
-        z-index:5;  
+
+
+    // Important
+
+    .important {
+
+        border: 1px solid #333;
+        border-radius:100px;
+        padding: 10px 20px;
+        font-weight:600;
     }
-    &:first-child:after{content:none;}
-    &.current{
-        color:$turq;
-    // Color active dot
-    &:before {
-        background:$turq;
-   z-index:10;  
-    }
-  }
+
+.section__40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-ul {
-list-style: none;
-padding: 0;
-margin: 0;
+.section__80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.section-lg {
+    padding-top:120px;
+    padding-bottom: 120px;
 }
 
-
-// mb_0
-.mb_0 {
-    margin-bottom:0px !important;
+.mb__20 {
+    margin-bottom:20px;
 }
-
-.c__black {
-    color:#333;
+.mb__40 {
+    margin-bottom:40px;
 }
-
-.c__blue {
-    color:$dark-blue;
-}
-
-// MD 
-	@media #{$sm-viewport} {
-        .mysteps {
-            width:40em;
-        }
-    }
-.pb__50 {
-    padding-bottom:50px;
-}
-
-.pd__20 {
-    padding:20px;
+.mb__50 {
+    margin-bottom:50px;
 }
 
 .mt__20 {
-
     margin-top:20px;
 }
-
-i.fa-truck {
-    display: inline-block;
-    background: $turq;
-    padding: 20px;
-    border-radius: 100px;
-    color: white;
-
+.mt__40 {
+    margin-top:40px;
 }
 
-.mb__0 {
-    margin-bottom:0px;
+.bg__black {
+    background:$black;
+}
+// Rib
+
+.ribbon {
+  padding: 15px;
+  clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
 }
 
-.m__0 { 
-    margin:0px;
+.important {
+    border:2px solid $red;
+    color:$red;
+    border-radius:5px;
 }
 
-.pd__25 {
-    padding:25px;
-}

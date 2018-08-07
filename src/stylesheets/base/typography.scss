@@ -1,0 +1,56 @@
+// Headers
+
+h1 {
+
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 1.21;
+    margin:0px;
+}
+
+h3 {
+
+    margin:0px;
+}
+
+// Paragraph
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.8;
+    font-size:16px;
+}
+
+// f__*
+
+.f__up {
+	text-transform: uppercase
+}
+.f__low {
+	text-transform: lowercase
+}
+.f__und {
+	text-decoration: underline
+}
+.f__no-und, .f__no-und-always, a.f__und:hover {
+	text-decoration: none
+}
+.f__light {
+	font-weight: 300
+}
+.f__regular {
+	font-weight: 400
+}
+.f__medium {
+	font-weight: 500
+}
+.f__bold {
+	font-weight: 600
+}
+.f__boldest {
+	font-weight: 700
+}
+.f__no-wrap {
+	white-space: nowrap
+}
+

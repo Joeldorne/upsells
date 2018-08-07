@@ -1,41 +1,7 @@
-
-/* buttons */
-
-button i {
-    padding-left:10px;
-}
-    
 button {
-	border:0px;
     padding: 20px 40px;
 	border-radius:100px;
-	font-weight:600;
-    text-transform:uppercase !important;
-    font-size:18px;
 }
 
-button#order {
 
-    background:$green;
-	color:white;
-}
-
-button#order:hover {
-
-	background:darkgreen;
-}
-
-button#cancel {
-
-	background:#e57b7b;
-	color:white;
-	font-weight:bold;
-    border-radius: 5px;
-}
-
-button#cancel:hover {
-
-	background:red;
-	color:white;
-}
 
