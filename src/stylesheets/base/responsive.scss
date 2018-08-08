@@ -3,7 +3,7 @@ $sm: '(max-width: 767px)';
 $md: '(min-width: 768px) and (max-width: 979px)';
 $lg: '(min-width: 1200px)';
 
-@mixin respond-to($media) {
+@mixin breakpoint($media) {
     @media only screen and #{$media} {
         @content;
     }

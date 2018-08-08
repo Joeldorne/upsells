@@ -63,15 +63,8 @@
     }
 
 
-    // Important
+// Important
 
-    .important {
-
-        border: 1px solid #333;
-        border-radius:100px;
-        padding: 10px 20px;
-        font-weight:600;
-    }
 
 .section__40 {
     padding-top: 40px;
@@ -123,5 +116,15 @@
     border:2px solid $red;
     color:$red;
     border-radius:5px;
+    padding: 10px 20px;
+    font-weight:600;
+}
+
+.retail {
+    border:1px solid $black;
+    color:$black;
+    border-radius:5px;
+    padding: 10px 20px;
+    font-weight:600;
 }
 

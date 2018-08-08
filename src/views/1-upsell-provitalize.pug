@@ -6,32 +6,37 @@ body
 
     // Includes Nav
     include includes/nav
-    .sp__50
     // Step 1 of 3:
     include includes/steps
 
-    .sp__50
+    // Write some if statement
 
-    .row.bg__white
-        .container
-            .col-xs-12.center-xs
-                h1.c__red WAIT! BEFORE YOU CONTINUE, CHECK OUT THIS ONE-TIME OFFER
-                h2 Congratulations! Your Provitalize order is on its way. Soon you can experience how its unique formula can rebalance your gut bacteria and turn more fat into fuel. Yet…
+    .container.section__80
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                h1.mb__40 Wait! Before you continue, check out this one-time offer
+
+        // Box
+        .row.center-xs.mb__40
+            .col-xs-11.col-md-8.bg__lightgrey.border-dotted
+                i.fa.fa-truck.fa-4x.mt__20
+                .row.center-xs
+                    p 
+                        b Congratulations! 
+                        | Your Provitalize order is on its way. Soon you can experience how its unique formula can rebalance your gut bacteria and turn more fat into fuel. Yet…
                 
-                .sp__50
 
-    .row.bg__lightgrey
-        .container
-            .col-xs-12.center-xs
+        .row.center-xs
+            .col-xs-11.col-md-8
 
-                .sp__50
 
-                h1 How Would You Like To Stock Up an Extra 6 Bottles at a 60% Discount?
+                h1.mb__40 How Would You Like To Stock Up an Extra 6 Bottles at a 60% Discount?
 
                 // Timer includes
                 include mixins/countdown
 
-                p 
+                p.mt__40 
                     | Soon your Provitalize order will arrive in the mail. 
                     | You can then experience how powerful it is at repopulating your gut with healthy bacteria, wiping out the bad guys and turning food into fuel, instead of ugly belly fat.
                 p
@@ -44,71 +49,87 @@ body
                     | That’s a 60% discount on the recommended retail price, saving you $375. 
                 // Button
                 // Highlight "Provitalize 6-Bottle Bundle" in orange
-                +order-button('Add "Provitalize 6-Bottle Bundle" to your order (Retail price: $594)')
-                p 
+                h1.mb__40 Add Provitalize 6-Bottle Bundle to your order
+
+                +order-button('Add to order - $594')
+
+                p.retail.mt__40
                     strong $36.50 per bottle! (
                     | Retail price $99 per bottle)
 
-                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:50%;")
+                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
 
                 p So for a little over $1 per day, you can be feeding your gut with Provitalize’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
 
     //Section
-    .row.bg__turq.c__white
+    .bg__blue.c__white.section__80
         .container
-            .col-xs-12.center-xs
+            .row.center-xs
+                .col-xs-11.col-md-8
 
-                // Video Section 
+                    // Video Section 
 
-                h1  Here’s a reminder of how people are transforming their bodies and lives with Provitalize:
+                    h1.mb__40  Here’s a reminder of how people are transforming their bodies and lives with Provitalize:
 
-                h1 Add Videos Here
+                    p.mb__40 Add Videos Here
 
 
-                // Section
-
-                p 
-                    | Provitalize 6-Bottle bundle still comes with our 
-                    strong free shipping worldwide, backed by our ironclad 60 day money back guarantee. 
-                    | So you’ve nothing to lose in upgrading to the 6 bottle bundle.
-
-                // Important Section
-
-    .row.bg__lightgrey
+    // Guarentee
+    .bg__turq.c__white.section__80
         .container
-            .col-xs-12.center-xs
+            .row.middle-xs.center-xs
+                .col-xs-11.col-md-8
+                    img(src="img/guarantee.png" alt="Image Title" style="width:300px;")
 
-                .sp__50
+                    p.mt__40 
+                        | Provitalize 6-Bottle bundle still comes with our 
+                        strong free shipping worldwide, backed by our ironclad 60 day money back guarantee. 
+                        | So you’ve nothing to lose in upgrading to the 6 bottle bundle.
 
-                h1 Important - This 60% Discount is Available Only as a ONE-TIME Add On for New Customers
-                p
-                    | If you close this page you’ll need to pay $99 for a single bottle of Provitalize in the future. Whereas today, you can get 6 bottles for just $36.50 each.
-                    | If you’re serious about improving your gut health...feeding your body with healthy bacteria...and regaining your ability to turn food into fuel instead of ugly belly fat, make sure you take advantage of this special offer.
-                    | And remember that with our 60 day month back guarantee, you either lose weight and gain greater self confidence from a slimmer, healthier body or you get every cent back.
-                    | You’ve been battling for weight problems for so long. Don’t you think it’s time to 
-                    strong stop the struggle and finally gain the body you deserve?
-
-                // highlight "Provitalize 6-Bottle Bundle" Orange
-                +order-button('Add "Provitalize 6-Bottle Bundle" to your order (Retail price: $594)')
-
-                h5 $375 OFF the retail price!
-
-                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:50%;")
-
-                .sp__50
-
-    // Bottom CTA 
-    .row.bg__blue.c__white
+    .bg__lightgrey.section__80
         .container
-            .col-xs-12.center-xs
-                .sp__50
-                h1 Take Advantage Of This Deal Now!
-                p Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
-                // Button Mixin
-                +order-button('Yes, Add On My Order with 6 Bottles of Provitalize Now!')
-                // Cancel Button
-                +cancel-button('No thank you, I would not like to take advantage of the 60% discount for 6 bottles of Provitalize. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
-                .sp__50
+            .row.center-xs
+                .col-xs-11.col-md-8
+
+                    // Important
+                    .row.center-xs
+                        .col-xs-11.col-md-6
+                            p.important.mb__40 Important
+
+                    h1.mb__40 This 60% Discount is Available Only as a ONE-TIME Add On for New Customers
+                    p.mb__40
+                        | If you close this page you’ll need to pay $99 for a single bottle of Provitalize in the future. Whereas today, you can get 6 bottles for just $36.50 each.
+                        | If you’re serious about improving your gut health...feeding your body with healthy bacteria...and regaining your ability to turn food into fuel instead of ugly belly fat, make sure you take advantage of this special offer.
+                        | And remember that with our 60 day month back guarantee, you either lose weight and gain greater self confidence from a slimmer, healthier body or you get every cent back.
+                        | You’ve been battling for weight problems for so long. Don’t you think it’s time to 
+                        strong stop the struggle and finally gain the body you deserve?
+
+    .bg__white.section__80
+        .container
+            .row.center-xs
+                .col-xs-11.col-md-8
+                    // highlight "Provitalize 6-Bottle Bundle" Orange
+                    h1.mb__40 Add Provitalize 6-Bottle Bundle to your order (Retail price: $594)
+                    +order-button('Add to order - $594')
+
+                    .row.center-xs
+                        .col-xs-11.col-md-6
+                            p.retail.mb__40.mt__40 $375 OFF the retail price!
+
+                    img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+
+    // Bottom Cta
+    .bg__lightgrey.section__80
+        .container
+            .row.center-xs
+                .col-xs-11.col-md-8
+
+                    h1.mb__40 Take Advantage Of This Deal Now!
+                    p.mb__40 Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
+                    // Button Mixin
+                    +order-button('Yes, Add On My Order with 6 Bottles of Provitalize Now!')
+                    // Cancel Button
+                    +cancel-button('No thank you, I would not like to take advantage of the 60% discount for 6 bottles of Provitalize. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
 
 
 
