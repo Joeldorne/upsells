@@ -1,15 +1,18 @@
 # Tasks
 
     - Clean CSS
-    - Remove Flexbox Grid system
+    - Remove Flexbox Grid system if doesn't work
     - Upload to Carthook
+    - Remove CSS folder in gulp from DIST
+    - Fix Step Selector with Varible
+
     
 
 # Page 1
 
-    - Done?
-
+    - Fix Retail
 # Page 2
+
 
     - Done?
 
