@@ -7,48 +7,55 @@ body
 
 
     // Section 
-    .container.section__80
-        .row.center-xs
-            .col-xs-11.col-md-8
-                h1.mb__40
-                    b.c__red HOLD ON! 
-                h1.mb__40 How Would You Like To Try 
-                    b 1 Bottle of Postburn at a 40% Discount?
+    .bg__post_gradient
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
+                    .row.center-xs.mb__40
+                        .col.xs-12.col-md-6
+                            p.important-light HOLD ON! 
+                    h1.mb__40.c__white How Would You Like To Try 1 Bottle of Postburn at a 40% Discount?
 
-                p 
-                    | If 4 bottles of Postburn seemed too big a commitment, we get it. Perhaps
-                    | the price was too high, even with the discount.
-                p
-                    | Yet, we’re eager for you to experience how Postburn can help you put the
-                    | foot down on the accelerator and release more stored fat into your body’s
-                    | engine to be 
-                    b converted into natural “all day” energy.
-                p
-                    | So we’d like to make you an offer that’s easier to afford.
-                p.mb__40
-                    | As a new customer and from this page only you can try 1 bottle of
-                    | Postburn for $39, a 40% discount on the recommended normal retail price
-                    | of $67.
+                    p.c__white 
+                        | If 4 bottles of Postburn seemed too big a commitment, we get it. Perhaps
+                        | the price was too high, even with the discount.
+                    p.c__white
+                        | Yet, we’re eager for you to experience how Postburn can help you put the
+                        | foot down on the accelerator and release more stored fat into your body’s
+                        | engine to be 
+                        b converted into natural “all day” energy.
+                    p.c__white
+                        | So we’d like to make you an offer that’s easier to afford.
+                    p.mb__40.c__white
+                        | As a new customer and from this page only you can try 1 bottle of
+                        | Postburn for $39, a 40% discount on the recommended normal retail price
+                        | of $67.
 
+    .bg__white
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
 
-                +order-button('Add 1 Bottle of Postburn to your order - $39')
-                .row.center-xs
-                    .col-xs-11.col-md-6
-                        p.retail.mt__40 (Retail price $67 per bottle)
-                img(src="img/Postburn_1Bottle.png" alt="Image Title" style="width:100%;")
+                    +order-button('Add 1 Bottle of Postburn to your order - $39')
+                    .row.center-xs
+                        .col-xs-11.col-md-6
+                            p.retail.mt__40 Retail price $67 per bottle
+                                .row.center-xs.mt__40.mb__40
+                                    .col.xs-12.col-md-8
+                                        img(src="img/Postburn_1Bottle.png" alt="Image Title" style="width:100%;")
 
-                p.mt__40 
-                    | With this generous discount, you can add try out adding Postburn as the
-                    | accelerator to your weight loss efforts with Provitalize. And discover its fat
-                    | releasing, fat converting, and energy boosting power for 
-                    b a little over $1 a day.
-                p
-                    | Postburn’s 
-                    b energy release is clean and natural
-                    | , making it the healthier
-                    | and superior alternative to soda or coffee for powering through the day.
+                    p.mt__40 
+                        | With this generous discount, you can add try out adding Postburn as the
+                        | accelerator to your weight loss efforts with Provitalize. And discover its fat
+                        | releasing, fat converting, and energy boosting power for 
+                        b a little over $1 a day.
+                    p
+                        | Postburn’s 
+                        b energy release is clean and natural
+                        | , making it the healthier
+                        | and superior alternative to soda or coffee for powering through the day.
 
-    .bg__turq.c__white.section__80
+    .bg__post_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
@@ -68,7 +75,7 @@ body
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.important.mb__40 Important 
-                    h1.mb__40 This 40% Discount is Available Only as a ONE-TIME Offer for New Customers
+                    h1.mb__40.c__dark-orange This 40% Discount is Available Only as a ONE-TIME Offer for New Customers
                     p 
                         | If you close this page you’ll need to pay $67 for a single bottle of Postburn.
                         | Whereas today, you can claim a month’s supply for just $39 and save $28
@@ -95,7 +102,7 @@ body
             .row.center-xs
                 .col-xs-11.col-md-8
                     
-                    h1.mb__40 Add Bottle of Postburn for Just $39.00
+                    h1.mb__40.c__dark-orange Add Bottle of Postburn for Just $39.00
 
                     .row.center-xs
                         .col-xs-11.col-md-6
@@ -103,13 +110,15 @@ body
 
                     +order-button('Add to order - $39.00')
 
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-4
+                            img(src="img/Postburn_1Bottle.png" alt="Image Title")
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.border-dotted.mb__40.mt__40 $28 OFF the retail price!
-                    img(src="img/Postburn_1Bottle.png" alt="Image Title" style="width:100%;")
 
     // Section CTA
-    .bg__lightgrey.section__80
+    .bg__post_gradient.section__80.c__white
         .container
             .row.center-xs
                 .col-xs-11.col-md-8

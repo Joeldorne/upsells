@@ -1,9 +1,40 @@
-$green: #3C963E;
-$dark-blue: #093783;
-$turq: #4998A7;
-$lightgrey: #f9f9f9;
-$grey: grey;
+// === Plain
+
 $text: #323232;
 $white: #FFFFFF;
 $red: #e57b7b;
 $black:#333;
+$lightgrey: #f9f9f9;
+
+// === Previtalize
+
+$pre-green:#50b662;
+$pre-dark-green: #1e7556;
+$pre-badge-orange: #e4803c; 
+$pre-light-green:#b1cf5c;
+$pre-text-grey: #b7b8b9;
+// Gradient used on bottle
+$pre-gradient:linear-gradient(to right,#50b662, #1e7556);
+
+// === Postburn
+
+$post-light-orange: #f7ac69;
+$post-dark-orange:#d75617;
+$post-orange:#feaa16;
+// Color of badge
+$post-badge-blue:#5dc6d0;
+// Gradient used on bottle
+$post-gradient:linear-gradient(to right,#f7ac69, #d75617);
+
+// === Provitalize
+
+$dark-blue: #00307b;
+$turq:#1b7487;
+$grey:#969698;
+
+$pro-gradient:linear-gradient(to right,#1b7487 , #00307b);
+
+
+// === Button
+
+$green: #3C963E;

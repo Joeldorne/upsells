@@ -5,38 +5,46 @@ body
     include includes/nav
     // Step 1 of 3:
     include includes/steps
-    .container.section__80
-        .row.center-xs
-            .col-xs-11.col-md-8
+    .bg__pro_gradient
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
 
-                h1.mb__40 Wait! How Would You Like To Try <u>4 Bottles of Provitalize at a 60% Discount?</u>
+                    .row.center-xs
+                        .col-xs-11.col-md-4
+                            p.important-light.mb__40 Wait!
+                    h1.mb__40.c__white How would you like to try 4 bottles of Provitalize at a 60% discount?
 
-                p 
-                    | If 6 bottles of Provitalize seemed too big a commitment, we get it. Perhaps the price was too high, even with the discount.
-                p 
-                    | Currently, you’ve only purchased a one month supply. While this is enough time to see results, we believe 
-                    strong you need a minimum of 4 months to repopulate your gut microbiome 
-                    | so you can lose the 5, 10, or 20 kg you need to gain a slimmer body that gives you confidence and pride.
+                    p.c__white 
+                        | If 6 bottles of Provitalize seemed too big a commitment, we get it. Perhaps the price was too high, even with the discount.
+                    p.c__white 
+                        | Currently, you’ve only purchased a one month supply. While this is enough time to see results, we believe 
+                        strong you need a minimum of 4 months to repopulate your gut microbiome 
+                        | so you can lose the 5, 10, or 20 kg you need to gain a slimmer body that gives you confidence and pride.
 
-                p
-                    | We’re eager for Provitalize to be a central pillar of your new healthy lifestyle. So we’d like to make you an offer that’s more affordable.
-                p
-                    | As a new customer and from this page only you can 
-                    u try out 4 bottles of Provitalize for just $139. 
-                    | That’s a 60% discount on the recommended retail price. 
+                    p.c__white 
+                        | We’re eager for Provitalize to be a central pillar of your new healthy lifestyle. So we’d like to make you an offer that’s more affordable.
+                    p.c__white 
+                        | As a new customer and from this page only you can 
+                        u try out 4 bottles of Provitalize for just $139. 
+                        | That’s a 60% discount on the recommended retail price. 
     .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
                     // &quot;Provitalize 4-Bottle Bundle&quot; highlight
-                    h1.mb__40 Add "Provitalize 4-Bottle Bundle" to your order
+                    h1.mb__40 Add Provitalize 4-Bottle Bundle to your order
                     +order-button('Add to order - $99')
-                    p.retail.mt__40 $35.00 per bottle! (Retail price $99 per bottle)
+                    .row.center-xs
+                        .col-xs-11.col-md-8
+                            p.retail.mt__40 $35.00 per bottle! (Retail price $99 per bottle)
 
-                    img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/provitalize_bottles.png" alt="Image Title")
 
-    .bg__blue.c__white.section__80
+    .bg__pro_gradient.c__white.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
@@ -86,19 +94,21 @@ body
                         .col-xs-11.col-md-6
                             p.retail.mt__40 $257 OFF the retail price!
 
-                    img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/provitalize_bottles.png" alt="Image Title")
 
                     p.border-dotted Add 4 More Bottles For Only $139
 
 
-    .bg__lightgrey.section__80
+    .bg__pro_gradient.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    h1.mb__40 Take Advantage Of This Deal Now!
+                    h1.mb__40.c__white Take Advantage Of This Deal Now!
 
-                    p.mb__40 Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
+                    p.mb__40.c__white Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
 
                     +order-button('Yes, Add 4 Bottles of Provitalize To My Order Now!')
 

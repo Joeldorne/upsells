@@ -5,51 +5,53 @@ body
     include includes/nav
     include includes/steps 
     // Section
-    .container.section__80
-        .row.center-xs
-            .col-xs-11.col-md-8
+    .bg__pre_gradient
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
 
-                h1.mb__40 Wait! Before you continue check out this one-time offer
-
-
-        // Box
-        .row.center-xs.mb__40
-            .col-xs-11.col-md-8.bg__lightgrey.border-dotted
-                i.fa.fa-truck.fa-4x.mt__20
-                .row.center-xs
-                    p
-                        b Congratulations! 
-                    p Your Provitalize order is on its way. Soon you can
-                        | experience how its unique formula can rebalance your gut bacteria and
-                        | turn more fat into fuel. Yet…
+                    h1.mb__40.c__white Wait! Before you continue check out this one-time offer
 
 
-        // Section
-        .row.center-xs
-            .col-xs-11.col-md-8
+            // Box
+            .row.center-xs.mb__40
+                .col-xs-11.col-md-8.bg__white.border-dotted
+                    i.fa.fa-truck.fa-4x.mt__20
+                    .row.center-xs
+                        p
+                            b Congratulations! 
+                        p Your Provitalize order is on its way. Soon you can
+                            | experience how its unique formula can rebalance your gut bacteria and
+                            | turn more fat into fuel. Yet…
 
-                h1.mb__40 How would like to send your weight loss into overdrive?
-                include mixins/countdown
-                .sp__50
 
-                p As Provitalize increases your good bacteria while wiping out the bad
-                    | guys you can look forward to regaining control of your food cravings,
-                    | rejuvenating your metabolism, and feeding your body with the nutrients
-                    | it needs to turn fat into energy.
-                    | Yet, for Provitalize to achieve its full potential it needs fuel.
-                p
-                    | A healthy diet rich in fiber, greens, and probiotic foods will go a long
-                    | way to feeding Provitalize what it needs to repopulate your good
-                    | bacteria.
-                p
-                    | Yet, how would you like to feed Provitalize with 
-                    b high octane fuel that sends its fat incinerating power into overdrive? 
-                    | While improving your sleep, lowering stress, and lifting your mood at the same time?
+            // Section
+            .row.center-xs
+                .col-xs-11.col-md-8
+
+                    h1.mb__40.c__white How would like to send your weight loss into overdrive?
+                    include mixins/countdown
+                    .sp__50
+
+                    p.c__white
+                        | As Provitalize increases your good bacteria while wiping out the bad
+                        | guys you can look forward to regaining control of your food cravings,
+                        | rejuvenating your metabolism, and feeding your body with the nutrients
+                        | it needs to turn fat into energy.
+                        | Yet, for Provitalize to achieve its full potential it needs fuel.
+                    p.c__white
+                        | A healthy diet rich in fiber, greens, and probiotic foods will go a long
+                        | way to feeding Provitalize what it needs to repopulate your good
+                        | bacteria.
+                    p.c__white
+                        | Yet, how would you like to feed Provitalize with 
+                        b high octane fuel that sends its fat incinerating power into overdrive? 
+                        | While improving your sleep, lowering stress, and lifting your mood at the same time?
 
 
 
     // Section
-    .bg__blue.c__white.section__80
+    .bg__white.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
@@ -57,7 +59,7 @@ body
 
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            h3.ribbon.bg__white.c__blue.mb__40 Introducing...
+                            h3.ribbon.bg__pre_gradient.c__white.mb__40 Introducing...
                     h1.mb__40 Previtalize
 
 
@@ -118,7 +120,9 @@ body
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    img(src="img/Previtalize_4Bottles.png" alt="Image Title" style="width:100%;")
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/Previtalize_4Bottles.png" alt="Image Title")
                     h1.mb__40.mt__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
                     +order-button('Add to cart - $95.00')
 
@@ -133,7 +137,7 @@ body
                         | boost Provitalize’s and gain optimal fat burning power.
 
     // Section 
-    .bg__blue.c__white.section__80
+    .bg__pre_gradient.c__white.section__80
         .container
             .row.center-xs
                 .col-md-8.col-xs-12
@@ -268,7 +272,7 @@ body
     // Reviews Collected by Okendo
 
     // Section 
-    .bg__turq.c__white.section__80
+    .bg__pre_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
@@ -342,7 +346,9 @@ body
                 h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
                 p.mb__40 Add on available on this page only
                 +order-button('Add to my order - $95.00')
-                img.mt__40(src="img/Previtalize_4Bottles.png" alt="Image Title" style="width:100%;")
+                .row.center-xs.mt__40.mb__40
+                    .col.xs-12.col-md-8
+                        img.mt__40(src="img/Previtalize_4Bottles.png" alt="Image Title" style="width:100%;")
 
 
     // Section

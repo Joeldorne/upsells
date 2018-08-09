@@ -4,35 +4,47 @@ body
     include includes/nav
     include includes/steps 
     // Done just needs checking and adding highlights
-    .container.section__80
-        .row.center-xs
-            .col-xs-11.col-md-8
+    .bg__post_gradient
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
 
 
-                h2 This is the LAST Special Discount Offer
-                h1.mb__40 Ready to put your foot down on the accelerator?
-                // Countdown timer
-                include mixins/countdown
-                p.mt__40 
-                    | If you took advantage of our discount on Previtalize, soon you’ll be able
-                    | boost your microbiome with “super yeasts” and accelerate Provitalize’s
-                    | weight loss power. For many people, this is the limit of how far they
-                    | want to take their body’s fat burning ability.
-                p
-                    | Yet, we’d often get emails from people eager to accelerate their weight
-                    | loss efforts even faster.
-                p
-                    | So we invested in exhaustive research to find a way of 
-                    em speeding up the complex biological process
-                    | for turning fat into fuel. Until finally,
-                    | we made a peakthrough...
+                    .row.center-xs
+                        .col-xs-11.col-md-6
+                            p.important-light.mb__40.c__white This is the LAST Special Discount Offer
+                    h1.mb__40.c__white Ready to put your foot down on the accelerator?
+                    // Coutdown
+                    .col-xs-12
+                      .row.center-xs
+                        div.c__white.f__up.f__bold.countdown.bg__dark-orange
+                            p.mb__0
+                              | THIS SPECIAL OFFER WILL EXPIRE IN 
+                              span#time
+
+                    p.mt__40.c__white
+                        | If you took advantage of our discount on Previtalize, soon you’ll be able
+                        | boost your microbiome with “super yeasts” and accelerate Provitalize’s
+                        | weight loss power. For many people, this is the limit of how far they
+                        | want to take their body’s fat burning ability.
+                    p.c__white
+                        | Yet, we’d often get emails from people eager to accelerate their weight
+                        | loss efforts even faster.
+                    p.c__white
+                        | So we invested in exhaustive research to find a way of 
+                        em speeding up the complex biological process
+                        | for turning fat into fuel. Until finally,
+                        | we made a peakthrough...
     // Postburn section
-    .section__80.bg__lightgrey
+    .section__80.bg__white
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    h1.mb__40 POSTBURN
+                    .row.center-xs
+                        .col-xs-11.col-md-6
+                            h3.ribbon.c__white.bg__dark-orange.mb__40 Introducing...
+                    h1.mb__40.c__dark-orange Postburn
 
                     p While Provitalize and Previtalize focus on the gut, 
                         em Postburn targets 3 weight loss mechanisms at a molecular level.
@@ -53,11 +65,14 @@ body
                         | So via this page only you can get a 
                         em 63% DISCOUNT off the recommended retail price for Postburn and save $168.
 
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/Postburn_4Bottles.png" alt="Image Title" style="width:100%;")
                     +order-button('Add "Postburn 4-Bottle Bundle" to your order for just $120.00 Recommended retail $268')
 
 
     // Section 
-    .bg__blue.c__white.section__80
+    .bg__post_gradient.c__white.section__80
         .container
             .row.center-xs
                 .col-md-8.col-xs-12
@@ -147,7 +162,7 @@ body
                                             | energy, and emptying your stores of fat to gain the slimmer, healthier,
                                             | and sexier body you’ve always wanted.
 
-                +order-button('Postburn 4-Bottle Bundle&quot; to your order for just $120.00')
+                +order-button('Postburn 4-Bottle Bundle to your order for just $120.00')
 
 
 
@@ -159,12 +174,14 @@ body
                 .col-xs-11.col-md-8
 
 
-                    h1.mb__40 74% of customers add Postburn to their Purchase 
-                    img(src="img/Postburn_4Bottles.png" alt="Image Title" style="width:100%;")
+                    h1.mb__40.c__dark-orange 74% of customers add Postburn to their Purchase 
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/Postburn_4Bottles.png" alt="Image Title" style="width:100%;")
 
                     // Section
 
-                    h1.mb__40 Postburn is the Accelerate for Your Gut’s Fat Burning Engine
+                    h1.mb__40.c__dark-orange Postburn is the Accelerate for Your Gut’s Fat Burning Engine
 
                     p Imagine your body is an engine. Previtalize is like feeding it with high
                         | octane fuel...Provitalize is the gas tank where this fuel is turned into
@@ -185,7 +202,7 @@ body
                         | artificial nasties. Just healthy ingredients as nature intended.
 
 
-    .bg__turq.c__white.section__80
+    .bg__post_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
@@ -214,7 +231,7 @@ body
                         .col-xs-11.col-md-6
 
                             p.important.mb__40 Important
-                    h1.mb__40 Your 63% Discount is Available from this Page Only
+                    h1.mb__40.c__dark-orange Your 63% Discount is Available from this Page Only
                     p You’ve already purchased Provitalize and if you also included
                         | Previtalize you’ve now got a great combination of supplements for
                         | revitalizing your gut health and metabolism.
@@ -252,8 +269,10 @@ body
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
-                    img(src="img/Postburn_4Bottles.png" alt="Image Title" style="width:100%;")
-                    h1.mb__40 Add Postburn 4-Bottle Bundle to your order for just $120.00*
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src="img/Postburn_4Bottles.png" alt="Image Title" style="width:100%;")
+                    h1.mb__40.c__dark-orange.mt__40 Add Postburn 4-Bottle Bundle to your order for just $120.00*
                     +order-button('Add to my order - $120.00.00')
                     p.dotted-border.mt__40 *Add on available on this page only
 

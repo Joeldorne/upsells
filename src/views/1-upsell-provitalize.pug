@@ -11,59 +11,66 @@ body
 
     // Write some if statement
 
-    .container.section__80
-        .row.center-xs
-            .col-xs-11.col-md-8
+    .bg__pro_gradient
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
 
-                h1.mb__40 Wait! Before you continue, check out this one-time offer
+                    h1.mb__40.c__white Wait! Before you continue, check out this one-time offer
 
-        // Box
-        .row.center-xs.mb__40
-            .col-xs-11.col-md-8.bg__lightgrey.border-dotted
-                i.fa.fa-truck.fa-4x.mt__20.mb__20
-                .row.center-xs
-                    p 
-                        b Congratulations! 
-                    p
-                        | Your Provitalize order is on its way. Soon you can experience how its unique formula can rebalance your gut bacteria and turn more fat into fuel. Yet…
-                
+            // Box
+            .row.center-xs.mb__40
+                .col-xs-11.col-md-8.bg__white.border-dotted
+                    i.fa.fa-truck.fa-4x.mt__20.mb__20
+                    .row.center-xs
+                        p 
+                            b Congratulations! 
+                        p
+                            | Your Provitalize order is on its way. Soon you can experience how its unique formula can rebalance your gut bacteria and turn more fat into fuel. Yet…
+                    
 
-        .row.center-xs
-            .col-xs-11.col-md-8
+            .row.center-xs
+                .col-xs-11.col-md-8
 
 
-                h1.mb__40 How Would You Like To Stock Up an Extra 6 Bottles at a 60% Discount?
+                    h1.mb__40.c__white How Would You Like To Stock Up an Extra 6 Bottles at a 60% Discount?
 
-                // Timer includes
-                include mixins/countdown
+                    // Timer includes
+                    include mixins/countdown
 
-                p.mt__40 
-                    | Soon your Provitalize order will arrive in the mail. 
-                    | You can then experience how powerful it is at repopulating your gut with healthy bacteria, wiping out the bad guys and turning food into fuel, instead of ugly belly fat.
-                p
-                    | As your slimmer body starts to emerge in the mirror, we just know you’ll want to continue benefiting from Provitalize’s fat incinerating power. 
-                    u You currently have just enough to start seeing gradual improvement to your body. 
-                    | As a new customer, we want to help you gain the long-term sustainable benefits of Provitalize while also saving money.
-                p 
-                    | So from this page only, you can add on to your order so you can 
-                    strong try out 6 bottles of Provitalize for just $219. 
-                    | That’s a 60% discount on the recommended retail price, saving you $375. 
-                // Button
-                // Highlight "Provitalize 6-Bottle Bundle" in orange
-                h1.mb__40 Add Provitalize 6-Bottle Bundle to your order
+                    p.mt__40.c__white
+                        | Soon your Provitalize order will arrive in the mail. 
+                        | You can then experience how powerful it is at repopulating your gut with healthy bacteria, wiping out the bad guys and turning food into fuel, instead of ugly belly fat.
+                    p.c__white
+                        | As your slimmer body starts to emerge in the mirror, we just know you’ll want to continue benefiting from Provitalize’s fat incinerating power. 
+                        u You currently have just enough to start seeing gradual improvement to your body. 
+                        | As a new customer, we want to help you gain the long-term sustainable benefits of Provitalize while also saving money.
+                    p.c__white 
+                        | So from this page only, you can add on to your order so you can 
+                        strong try out 6 bottles of Provitalize for just $219. 
+                        | That’s a 60% discount on the recommended retail price, saving you $375. 
+    // Section
+    .bg__white
+        .container.section__80
+            .row.center-xs
+                .col-xs-11.col-md-8
+                    h1.mb__40.c__blue Add Provitalize 6-Bottle Bundle to your order
 
-                +order-button('Add to order - $594')
+                    +order-button('Add to order - $594')
 
-                p.retail.mt__40
-                    strong $36.50 per bottle! (
-                    | Retail price $99 per bottle)
+                    p.retail.mt__40
+                        strong $36.50 per bottle! (
+                        | Retail price $99 per bottle)
 
-                img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
 
-                p So for a little over $1 per day, you can be feeding your gut with Provitalize’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
+                            img(src="img/provitalize_bottles.png" alt="Image Title")
+
+                    p So for a little over $1 per day, you can be feeding your gut with Provitalize’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
 
     //Section
-    .bg__blue.c__white.section__80
+    .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
@@ -83,7 +90,7 @@ body
 
 
     // Guarentee
-    .bg__turq.c__white.section__80
+    .bg__pro_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
                 .col-xs-11.col-md-8
@@ -124,16 +131,19 @@ body
                         .col-xs-11.col-md-6
                             p.retail.mb__40.mt__40 $375 OFF the retail price!
 
-                    img(src="img/provitalize_bottles.png" alt="Image Title" style="width:100%;")
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+
+                            img(src="img/provitalize_bottles.png" alt="Image Title")
 
     // Bottom Cta
-    .bg__lightgrey.section__80
+    .bg__pro_gradient.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    h1.mb__40 Take Advantage Of This Deal Now!
-                    p.mb__40 Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
+                    h1.mb__40.c__white Take Advantage Of This Deal Now!
+                    p.mb__40.c__white Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
                     // Button Mixin
                     +order-button('Yes, Add On My Order with 6 Bottles of Provitalize Now!')
                     // Cancel Button
