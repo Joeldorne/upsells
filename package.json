@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-uglifycss": "^1.1.0"
+  },
   "devDependencies": {
     "gulp": "latest",
     "gulp-coffee": "latest",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
+    "gulp-gm": "0.0.9",
     "gulp-image": "^4.3.0",
     "gulp-pug": "latest",
+    "gulp-purgecss": "^1.0.0",
     "gulp-sass": "latest",
+    "gulp-style-inject": "^0.1.1",
     "gulp-uglify": "latest",
     "gulp-util": "latest"
   },
