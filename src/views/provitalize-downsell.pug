@@ -1,10 +1,7 @@
-// Mixins -- Add this file to head
-include mixins/button
-include includes/head
-body
-    include includes/nav
-    // Step 1 of 3:
-    include includes/steps
+extends includes/layout
+
+block content
+
     .bg__pro_gradient
         .container.section__80
             .row.center-xs
@@ -33,7 +30,7 @@ body
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    // &quot;Provitalize 4-Bottle Bundle&quot; highlight
+                    //- &quot;Provitalize 4-Bottle Bundle&quot; highlight
                     h1.mb__40 Add Provitalize 4-Bottle Bundle to your order
                     +order-button('Add to order - $99')
                     .row.center-xs
@@ -60,14 +57,14 @@ body
 
 
 
-    // #3 Important Section
+    //- #3 Important Section
 
     .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    // Important
+                    //- Important
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.important.mb__40 Important
@@ -89,7 +86,7 @@ body
                     h1.mb__40 Add Provitalize 4-Bottle Bundle to your order (Retail price: $396)
                     +order-button('Add to order - $396')
 
-                    // Important
+                    //- Important
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.retail.mt__40 $257 OFF the retail price!

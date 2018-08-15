@@ -1,15 +1,14 @@
-include includes/head
-include mixins/button
-body
-    include includes/nav
-    include includes/steps 
-    // Done just needs to be checked and add highlights
+extends includes/layout
+
+block content
+
+    //- Done just needs to be checked and add highlights
     .bg__pre_gradient.c__white
         .container.section__80
             .row.center-xs
                 .col-xs-11.col-md-10
 
-                    // Step 2 of 3:
+                    //- Step 2 of 3:
                     h1.mb__40 Wait! How Would You Like To Try 2 Bottles of Previtalize at a 52% Discount?
 
                     p 
@@ -24,7 +23,7 @@ body
                     p
                         | Previtalize for $65 - a 52% discount on the recommended normal retail
                         | price of $134.
-    // Section
+    //- Section
     .section__80.bg__lightgrey
         .container
             .row.center-xs
@@ -46,7 +45,7 @@ body
                         | help relieve stress, lift your mood, and improve your sleep.
                         | Previtalize 1-Bottle still comes with our free shipping worldwide, backed
                         | by the same ironclad 60 day money back guarantee!
-        // Section
+        //- Section
     .bg__white.section__80
         .container
             .row.center-xs
@@ -86,7 +85,7 @@ body
                         .col.xs-12.col-md-8
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_2_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
 
-    // Bottom CTA
+    //- Bottom CTA
     .bg__lightgrey.section__80
         .container
             .row.center-xs

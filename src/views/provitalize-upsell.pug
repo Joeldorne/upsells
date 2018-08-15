@@ -1,15 +1,6 @@
-//- Mixins -- Add this file to head
-include mixins/button
-//- Includes Head
-include includes/head
-body
+extends includes/layout
 
-    //- Includes Nav
-    include includes/nav
-    // Step 1 of 3:
-    include includes/steps
-
-    //- Write some if statement
+block content
 
     .bg__pro_gradient
         .container.section__80
@@ -35,8 +26,13 @@ body
 
                     h1.mb__40.c__white How Would You Like To Stock Up an Extra 6 Bottles at a 60% Discount?
 
-                    // Timer includes
-                    include mixins/countdown
+                    //- Coutdown
+                    .col-xs-12
+                      .row.center-xs
+                        div.c__white.f__up.f__bold.countdown.bg__blue
+                            p.mb__0
+                              | THIS SPECIAL OFFER WILL EXPIRE IN 
+                              span#time
 
                     p.mt__40.c__white
                         | Soon your Provitalize order will arrive in the mail. 
@@ -49,7 +45,7 @@ body
                         | So from this page only, you can add on to your order so you can 
                         strong try out 6 bottles of Provitalize for just $219. 
                         | That’s a 60% discount on the recommended retail price, saving you $375. 
-    // Section
+        //- Section
     .bg__white
         .container.section__80
             .row.center-xs
@@ -69,13 +65,13 @@ body
 
                     p So for a little over $1 per day, you can be feeding your gut with Provitalize’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
 
-    //Section
+        //- Section
     .bg__lightgrey.section__80
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    // Video Section 
+                    //- Video Section 
 
                     h1.mb__40  Here’s a reminder of how people are transforming their bodies and lives with Provitalize:
 
@@ -89,7 +85,7 @@ body
                     iframe(width='100%', height='315', src='https://www.youtube.com/embed/8KKZ5lNX1do', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
 
 
-    // Guarentee
+        //- Guarentee
     .bg__pro_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
@@ -106,7 +102,7 @@ body
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    // Important
+                    //- Important
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.important.mb__40 Important
@@ -123,7 +119,7 @@ body
         .container
             .row.center-xs
                 .col-xs-11.col-md-8
-                    // highlight "Provitalize 6-Bottle Bundle" Orange
+                    //- highlight "Provitalize 6-Bottle Bundle" Orange
                     h1.mb__40 Add Provitalize 6-Bottle Bundle to your order (Retail price: $594)
                     +order-button('Add to order - $594')
 
@@ -136,7 +132,7 @@ body
 
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_provitalize_6_bottles_1024x1024.png" alt="Image Title")
 
-    // Bottom Cta
+        //- Bottom Cta
     .bg__pro_gradient.section__80
         .container
             .row.center-xs
@@ -144,9 +140,9 @@ body
 
                     h1.mb__40.c__white Take Advantage Of This Deal Now!
                     p.mb__40.c__white Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
-                    // Button Mixin
+                    //- Button Mixin
                     +order-button('Yes, Add On My Order with 6 Bottles of Provitalize Now!')
-                    // Cancel Button
+                    //- Cancel Button
                     +cancel-button('No thank you, I would not like to take advantage of the 60% discount for 6 bottles of Provitalize. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
 
 

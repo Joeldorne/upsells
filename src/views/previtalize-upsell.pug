@@ -1,10 +1,8 @@
-include mixins/button
+extends includes/layout
 
-include includes/head
-body
-    include includes/nav
-    include includes/steps 
-    // Section
+block content
+
+    //- Section
     .bg__pre_gradient
         .container.section__80
             .row.center-xs
@@ -13,7 +11,7 @@ body
                     h1.mb__40.c__white Wait! Before you continue check out this one-time offer
 
 
-            // Box
+            //- Box
             .row.center-xs.mb__40
                 .col-xs-11.col-md-8.bg__white.border-dotted
                     i.fa.fa-truck.fa-4x.mt__20
@@ -25,12 +23,18 @@ body
                             | turn more fat into fuel. Yet…
 
 
-            // Section
+            //- Section
             .row.center-xs
                 .col-xs-11.col-md-8
 
                     h1.mb__40.c__white How would like to send your weight loss into overdrive?
-                    include mixins/countdown
+                    //- Coutdown
+                    .col-xs-12
+                      .row.center-xs
+                        div.c__white.f__up.f__bold.countdown.bg__green
+                            p.mb__0
+                              | THIS SPECIAL OFFER WILL EXPIRE IN 
+                              span#time
                     .sp__50
 
                     p.c__white
@@ -50,7 +54,7 @@ body
 
 
 
-    // Section
+    //- Section
     .bg__white.section__80
         .container
             .row.center-xs
@@ -75,7 +79,7 @@ body
                         | improving mood, increasing sleep quality
                         | and more.
 
-    // Section 
+    //- Section 
     .section__80.bg__lightgrey
         .container
             .row.center-xs
@@ -136,7 +140,7 @@ body
                         | *For a four month supply, this works out at just $0.78 a day to turbo-
                         | boost Provitalize’s and gain optimal fat burning power.
 
-    // Section 
+    //- Section 
     .bg__pre_gradient.c__white.section__80
         .container
             .row.center-xs
@@ -230,7 +234,7 @@ body
                             | all round health. And when you take it with Provitalize you give your
                             | stomach a dream combination of gut rebalancing nutrition.
 
-    // section
+    //- section
     .bg__lightgrey.section__80
         .container
             .row.center-xs
@@ -242,7 +246,7 @@ body
 
                     +order-button('Add to my order - $97').shadow
 
-    // Section 
+    //- Section 
     .center-xs.bg__white.section__80
         .container
             .row.middle-xs.center-xs
@@ -269,9 +273,9 @@ body
                         | preservatives, no artificial colors or flavors, no wheat or gluten, or any
                         | artificial nasties. Just healthy ingredients as nature intended.
 
-    // Reviews Collected by Okendo
+    //- Reviews Collected by Okendo
 
-    // Section 
+    //- Section 
     .bg__pre_gradient.c__white.section__80
         .container
             .row.middle-xs.center-xs
@@ -287,7 +291,7 @@ body
                         | weight or are unsatisfied for any reason at all, your purchase will be
                         | refunded in full.
 
-    // Section
+    //- Section
     .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
@@ -295,7 +299,7 @@ body
                 +order-button('Add to my order - $95.00')
 
 
-    // Section
+    //- Section
     .bg__lightgrey.section__80
         .container
             .row.center-xs
@@ -338,7 +342,7 @@ body
                             | forever. So take that extra step and add on to your order to include
                             | Previtalize. In a few weeks you’ll be so happy you did:
 
-    // Section
+    //- Section
     .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
@@ -354,7 +358,7 @@ body
                 +cancel-button('No thank you, I would not like to take advantage of the 40% discount for 4 bottles of Previtalize. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
 
 
-    // Section
+    //- Section
     .bg__lightgrey.section__80
         .container
             .row.center-xs

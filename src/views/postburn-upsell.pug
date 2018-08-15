@@ -1,9 +1,8 @@
-include mixins/button
-include includes/head
-body
-    include includes/nav
-    include includes/steps 
-    // Done just needs checking and adding highlights
+extends includes/layout
+
+block content
+
+    //- Done just needs checking and adding highlights
     .bg__post_gradient
         .container.section__80
             .row.center-xs
@@ -14,7 +13,7 @@ body
                         .col-xs-11.col-md-6
                             p.important-light.mb__40.c__white This is the LAST Special Discount Offer
                     h1.mb__40.c__white Ready to put your foot down on the accelerator?
-                    // Coutdown
+                    //- Coutdown
                     .col-xs-12
                       .row.center-xs
                         div.c__white.f__up.f__bold.countdown.bg__dark-orange
@@ -35,7 +34,7 @@ body
                         em speeding up the complex biological process
                         | for turning fat into fuel. Until finally,
                         | we made a peakthrough...
-    // Postburn section
+    //- Postburn section
     .section__80.bg__white
         .container
             .row.center-xs
@@ -71,7 +70,7 @@ body
                     +order-button('Add "Postburn 4-Bottle Bundle" to your order for just $120.00 Recommended retail $268')
 
 
-    // Section 
+    //- Section 
     .bg__post_gradient.c__white.section__80
         .container
             .row.center-xs
@@ -155,7 +154,7 @@ body
                                                 p Researchers from the University of Udine, Italy, found that
                                                     | rhodiola rosea disarms multiple fat formation triggers, such as
                                                     | FGF2 and PPARG.[8]
-                                        // Section 
+                                        //- Section 
                                         h3
                                         p Just one of these fat loss mechanisms can make a huge difference to your weight loss efforts. When you combine all three you can put
                                             | yourself on the fast track to releasing stored fat, converting it into
@@ -167,7 +166,7 @@ body
 
 
 
-    // Section 
+    //- Section 
     .bg__white.section__80
         .container
             .row.middle-xs.center-xs
@@ -179,7 +178,7 @@ body
                         .col.xs-12.col-md-8
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_4_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
 
-                    // Section
+                    //- Section
 
                     h1.mb__40.c__dark-orange Postburn is the Accelerate for Your Gut’s Fat Burning Engine
 
@@ -263,7 +262,7 @@ body
                         | burning engine and propel yourself to gaining the slim, sexy body
                         | you’ve always yearned for:
 
-                    // Section 
+                    //- Section 
 
     .bg__white.section__80
         .container
@@ -278,7 +277,7 @@ body
                     .sp__25
                     +cancel-button('No thank you, I would not like to take advantage of the 63% discount for 4 bottles of Postburn. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
 
-    // Section
+    //- Section
     .bg__lightgrey.section__80
         .container
             .row.center-xs

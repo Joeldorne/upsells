@@ -1,3 +1,10 @@
+.mysteps li.not-done:before {
+    border: solid 1px $grey;
+    padding: 5px;
+    background-clip: content-box;
+    background-color: $grey;
+}
+
 // Steps
 .mysteps {
     width:20em;
@@ -52,7 +59,7 @@
         z-index:5;  
     }
     &:first-child:after{content:none;}
-    &.current:before{
+    &.done-orange:before{
         border: solid 1px #f06d06;
         padding: 5px;
         background-clip: content-box; /* support: IE9+ */
@@ -69,5 +76,20 @@ ul {
 list-style: none;
 padding: 0;
 margin: 0;
+}
+
+
+.mysteps li.done-blue:before {
+    border: solid 1px $dark-blue;
+    padding: 5px;
+    background-clip: content-box;
+    background-color: $dark-blue;
+}
+
+.mysteps li.done-green:before {
+    border: solid 1px $pre-dark-green;
+    padding: 5px;
+    background-clip: content-box;
+    background-color: $pre-dark-green;
 }
 
