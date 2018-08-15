@@ -1,6 +1,7 @@
 extends includes/layout
 
 block content
+    -var ProductImage = "https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_2_bottles_1024x1024.png"
 
 
     //- Section 
@@ -11,7 +12,7 @@ block content
                     .row.center-xs.mb__40
                         .col.xs-12.col-md-6
                             p.important-light HOLD ON! 
-                    h1.mb__40.c__white How Would You Like To Try 1 Bottle of Postburn at a 40% Discount?
+                    h1.mb__40.c__white How Would You Like To Try 2 Bottle of Postburn at a 32% Discount?
 
                     p.c__white 
                         | If 4 bottles of Postburn seemed too big a commitment, we get it. Perhaps
@@ -24,22 +25,22 @@ block content
                     p.c__white
                         | So we’d like to make you an offer that’s easier to afford.
                     p.mb__40.c__white
-                        | As a new customer and from this page only you can try 1 bottle of
-                        | Postburn for $39, a 40% discount on the recommended normal retail price
-                        | of $67.
+                        | As a new customer and from this page only you can try 2 bottle of
+                        | Postburn for $85.00, a 32% discount on the recommended normal retail price
+                        | of $125.
 
     .bg__white
         .container.section__80
             .row.center-xs
                 .col-xs-11.col-md-8
 
-                    +order-button('Add 1 Bottle of Postburn to your order - $39')
+                    +order-button('Add 2 Bottle of Postburn to your order - $85.00')
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            p.retail.mt__40 Retail price $67 per bottle
-                                .row.center-xs.mt__40.mb__40
-                                    .col.xs-12.col-md-8
-                                        img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_1_bottle_1024x1024.png" alt="Image Title" style="width:100%;")
+                            p.retail.mt__40 Retail price $125
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-6
+                            img(src=ProductImage alt="Image Title" style="width:100%;")
 
                     p.mt__40 
                         | With this generous discount, you can add try out adding Postburn as the
@@ -72,10 +73,10 @@ block content
                     .row.center-xs
                         .col-xs-11.col-md-6
                             p.important.mb__40 Important 
-                    h1.mb__40.c__dark-orange This 40% Discount is Available Only as a ONE-TIME Offer for New Customers
+                    h1.mb__40.c__dark-orange This 32% Discount is Available Only as a ONE-TIME Offer for New Customers
                     p 
-                        | If you close this page you’ll need to pay $67 for a single bottle of Postburn.
-                        | Whereas today, you can claim a month’s supply for just $39 and save $28
+                        | If you close this page you’ll need to pay $125 for a single bottle of Postburn.
+                        | Whereas today, you can claim a month’s supply for just $85.00 and save $40
                         | to keep in your pocket.
                     p
                         | If you’re eager to be among our ambitious group of customers who leave
@@ -91,7 +92,7 @@ block content
                         | Remember that with our 60 day month back guarantee, you either lose
                         | weight and gain a greater release of life transformative energy or you get
                         | every cent back. So why not 
-                        b give Postburn a try and claim your 40% discount?
+                        b give Postburn a try and claim your 32% discount?
 
     //- Section 
     .section__80.bg__white
@@ -99,20 +100,20 @@ block content
             .row.center-xs
                 .col-xs-11.col-md-8
                     
-                    h1.mb__40.c__dark-orange Add Bottle of Postburn for Just $39.00
+                    h1.mb__40.c__dark-orange Add Bottle of Postburn for Just $85.00.00
 
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            p.retail.mb__40 Retail price: $67
+                            p.retail.mb__40 Retail price: $125
 
-                    +order-button('Add to order - $39.00')
+                    +order-button('Add to order - $85.00.00')
 
                     .row.center-xs.mt__40.mb__40
-                        .col.xs-12.col-md-4
-                            img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_1_bottle_1024x1024.png" alt="Image Title")
+                        .col.xs-12.col-md-6
+                            img(src=ProductImage alt="Image Title")
                     .row.center-xs
                         .col-xs-11.col-md-6
-                            p.border-dotted.mb__40.mt__40 $28 OFF the retail price!
+                            p.border-dotted.mb__40.mt__40 $50 OFF the retail price!
 
     //- Section CTA
     .bg__post_gradient.section__80.c__white
@@ -126,5 +127,5 @@ block content
                         | Click on the green button below to instantly add this
                         | special offer to your order. You will not need to enter your payment details again.
 
-                    +order-button('Yes, Add 1 Bottle of Postburn To My Order Now')
-                    +cancel-button('No thank you, I would not like to take advantage of the 40% discount for 1 bottle of Postburn. I’m happy maintain the release of stored fat into my body’s energy at average levels. Please take me to the next screen to complete my order')
+                    +order-button('Yes, Add 2 Bottle of Postburn To My Order Now')
+                    +cancel-button('No thank you, I would not like to take advantage of the 32% discount for 2 bottle of Postburn. I’m happy maintain the release of stored fat into my body’s energy at average levels. Please take me to the next screen to complete my order')
