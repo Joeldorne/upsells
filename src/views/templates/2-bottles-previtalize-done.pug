@@ -1,0 +1,142 @@
+div(class=product.theme)
+    .container.section__80
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                .row.center-xs
+                    .col-xs-11.col-md-4
+                        p.important-light.mb__40 Wait!
+        //- Box
+        .row.center-xs.mb__40
+            .col-xs-11.col-md-8.bg__white.border-dotted
+                i.fa.fa-truck.fa-4x.mt__20.mb__20
+                .row.center-xs
+                    p 
+                        b Congratulations! 
+                    p
+                        | Your #{product.purchasedname} order is on its way. Soon you can experience how its unique formula can rebalance your gut bacteria and turn more fat into fuel. Yet…
+
+
+
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                h1.mb__40.c__white How would you like to try #{product.quantity} bottles of #{product.name} at a #{product.discount} discount?
+
+                //- Coutdown
+                .col-xs-12
+                  .row.center-xs
+                    div.c__white.f__up.f__bold.countdown.mb__40(class=product.theme)
+                        p.mb__0
+                          | THIS SPECIAL OFFER WILL EXPIRE IN 
+                          span#time
+
+                p.c__white 
+                    | Currently, you’ve only purchased a #{product.purchasedsupply} month supply. While this is enough time to see results, we believe 
+                    strong you need a minimum of #{product.quantity} months to repopulate your gut microbiome 
+                    | so you can lose the 5, 10, or 20 kg you need to gain a slimmer body that gives you confidence and pride.
+
+                p.c__white 
+                    | We’re eager for #{product.name} to be a central pillar of your new healthy lifestyle. So we’d like to make you an offer that’s more affordable.
+                p.c__white 
+                    | As a new customer and from this page only you can 
+                    u try out #{product.quantity} bottles of #{product.name} for just #{product.price}. 
+                    | That’s a #{product.discount} discount on the recommended retail price. 
+.bg__lightgrey.section__80
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                //- &quot;#{product.name} 4-Bottle Bundle&quot; highlight
+                h1.mb__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order
+
+                // Order Button
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold Add to your order - #{product.price}
+                    i.fa.fa-arrow-right.sp__left-1
+
+                .row.center-xs
+                    .col-xs-11.col-md-8
+                        p.retail.mt__40 #{product.perbottle} per bottle! (Retail price #{product.retail} per bottle)
+
+                .row.center-xs.mt__40.mb__40
+                    .col.xs-12.col-md-4
+                        img(src=product.image alt="Image Title")
+
+.c__white.section__80(class=product.theme)
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+
+                h1.mb__40 Add #{product.quantity} More Bottles for Only #{product.price}
+
+                p 
+                    | So for a little over $1 per day, you can be feeding your gut with #{product.name}’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
+                p
+                    | #{product.name} #{product.quantity}-Bottle bundle still comes with our 
+                    strong free shipping worldwide, backed by our iron-clad 60 day money back guarantee. So you’ve nothing to lose in upgrading to the #{product.quantity} bottle bundle.
+
+
+
+//- #3 Important Section
+
+.bg__lightgrey.section__80
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                //- Important
+                .row.center-xs
+                    .col-xs-11.col-md-6
+                        p.important.mb__40 Important
+                h1.mb__40 This #{product.discount} Discount is Available Only as a ONE-TIME Add On for New Customers
+
+                p If you close this page you’ll need to pay #{product.retail} for a single bottle of #{product.name} in the future. Whereas today, you can get #{product.amount} bottles for just #{product.perbottle} each.
+
+                p If you’re serious about improving your gut health...feeding your body with healthy bacteria...and regaining your ability to turn food into fuel instead of ugly belly fat, make sure you take advantage of this special offer.
+
+                p And remember that with our 60 day month back guarnantee, you either lose weight and gain greater self confidence from a slimmer, healthier body or you get every cent back.
+
+                p You’ve been battling for weight problems for so long. Don’t you think it’s time to stop the struggle and finally gain the body you deserve?
+.bg__white.section__80
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+
+                h1.mb__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order (Retail price: #{product.retail})
+
+                //Order Button
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold Add to your order - #{product.price}
+                    i.fa.fa-arrow-right.sp__left-1
+
+                //- Important
+                .row.center-xs
+                    .col-xs-11.col-md-6
+                        p.retail.mt__40 #{product.saving} OFF the retail price!
+
+                .row.center-xs.mt__40.mb__40
+                    .col.xs-12.col-md-4
+                        img(src=product.image alt="Image Title")
+
+                p.border-dotted Add #{product.quantity} More Bottles For Only #{product.price}
+
+
+.bg__pro_gr.section__80.bg__lightgrey
+    .container
+        .row.center-xs
+            .col-xs-11.col-md-8
+
+                h1.mb__40 Take Advantage Of This Deal Now!
+
+                p.mb__40 Click on the green button below to instantly add this add on to your order. You will not need to enter your payment details again. 
+
+                //Order Button
+                button#order.ch-btn.center-xs.middle-xs.bg__green.f__bold.c__white Yes, Add #{product.quantity} Bottles of #{product.name} To My Order Now!
+                    i.fa.fa-arrow-right.sp__left-1
+                
+
+                button#cancel.ch-btn.mt__40.f__bold No thank you, I would not like to take advantage of the #{product.discount} discount for #{ProductAmount} bottles of #{product.name}. I’m happy with just #{product.purchasedsupply} month supply and then paying #{product.retail} per bottle afterward. Please take me tothe next page to complete my order
+
+
+
