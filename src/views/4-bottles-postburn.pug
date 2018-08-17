@@ -2,20 +2,20 @@ extends includes/layout
 
 block content
 
-    //- Change Content
+    //- Complete
     -
         var product = {
-            image: "https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_provitalize_1_bottle_1024x1024.png",
-            quantity: "1",
-            discount: "29%",
-            retail: "$67.00",
-            price: "$49.00",
-            product: "1 bottle of Provitalize",
-            name: "Provitalize",
-            perbottle: "$5.00",
-            saving: "$18",
+            image: "https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_4_bottles_1024x1024.png",
+            quantity: "4",
+            discount: "",
+            retail: "",
+            price: "$125",
+            product: "4 bottles of Provitalize",
+            name: "Postburn",
+            perbottle: "",
+            saving: "$255",
             currentsupply: "one month",
-            theme: "bg__pro_gradient"
+            theme: "bg__post_gradient"
 
         }
 
@@ -80,12 +80,15 @@ block content
                         em put your foot on the accelerator towards gaining a slimmer, sexier body.
                     p
                         | So via this page only you can get a 
-                        em 25% DISCOUNT off the recommended retail price for Postburn and save $50.00.
+                        em #{product.discount} DISCOUNT off the recommended retail price for Postburn and save #{product.saving}.
 
                     .row.center-xs.mt__40.mb__40
                         .col.xs-12.col-md-8
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_4_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
-                    +order-button('Add Postburn 4-Bottle Bundle to your order for just $125.00')
+
+                    button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                        | Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
+                        i.fa.fa-arrow-right.sp__left-1
 
 
     //- Section 
@@ -179,7 +182,9 @@ block content
                                             | energy, and emptying your stores of fat to gain the slimmer, healthier,
                                             | and sexier body you’ve always wanted.
 
-                +order-button('Postburn 4-Bottle Bundle to your order for just $125.00')
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    | Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
+                    i.fa.fa-arrow-right.sp__left-1
 
 
 
@@ -248,7 +253,7 @@ block content
                         .col-xs-11.col-md-6
 
                             p.important.mb__40 Important
-                    h1.mb__40.c__dark-orange Your 25% Discount is Available from this Page Only
+                    h1.mb__40.c__dark-orange Your #{product.discount} Discount is Available from this Page Only
                     p You’ve already purchased Provitalize and if you also included
                         | Previtalize you’ve now got a great combination of supplements for
                         | revitalizing your gut health and metabolism.
@@ -271,7 +276,7 @@ block content
                         | steady release of natural energy. And this is exactly what Postburn is
                         | designed to do.
                     p
-                        | From this page only, you can get a massive 25% discount off the
+                        | From this page only, you can get a massive #{product.discount} discount off the
                         | normal retail price. Because you’ve already put your trust in us
                         | purchasing Provitalize, we feel we owe you every opportunity we can
                         | offer at gaining a better body and healthier life.
@@ -289,11 +294,16 @@ block content
                     .row.center-xs.mt__40.mb__40
                         .col.xs-12.col-md-8
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_postburn_4_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
-                    h1.mb__40.c__dark-orange.mt__40 Add Postburn 4-Bottle Bundle to your order for just $125.00*
+                    h1.mb__40.c__dark-orange.mt__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}*
                     p.dotted-border.mt__40 *Add on available on this page only
-                    +order-button('Add to my order - $125.00.00')
+                    button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                        | Yes, Add #{product.quantity} Bottles of #{product.name} To My Order Now!
+                        i.fa.fa-arrow-right.sp__left-1
+                    
                     .sp__25
-                    +cancel-button('No thank you, I would not like to take advantage of the 25% discount for 4 bottles of Postburn. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
+
+                    button#cancel.ch-btn.mt__40.f__bold
+                        | No thank you, I would not like to take advantage of the #{product.discount} discount for #{product.quantity} bottles of #{product.name}. I’m happy with just #{product.currentsupply} supply and then paying #{product.retail} per bottle afterward. Please take me tothe next page to complete my order
 
     //- Section
     .bg__lightgrey.section__80

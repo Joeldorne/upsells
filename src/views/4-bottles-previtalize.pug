@@ -2,20 +2,23 @@ extends includes/layout
 
 block content
 
-    //- Change Content
+    // *4 Previtalize Bottles = $95*
+    // (That's a whopping $173 OFF the retail price! If you take action now... you get to save 40% OFF the usual price of Previtalize!)
+
+    //- Correct Content
     -
         var product = {
-            image: "https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_provitalize_1_bottle_1024x1024.png",
-            quantity: "1",
-            discount: "29%",
-            retail: "$67.00",
-            price: "$49.00",
-            product: "1 bottle of Provitalize",
-            name: "Provitalize",
-            perbottle: "$5.00",
-            saving: "$18",
-            currentsupply: "one month",
-            theme: "bg__pro_gradient"
+            image: "https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_4_bottles_1024x1024.png",
+            quantity: "4",
+            discount: "40%",
+            retail: "NULL",
+            price: "$95",
+            product: "4 bottle of Previtalize",
+            name: "Previtalize",
+            perbottle: "NULL",
+            saving: "$173",
+            currentsupply: "NULL",
+            theme: "bg__pre_gradient"
 
         }
 
@@ -133,7 +136,7 @@ block content
 
                     p
                         | So via this page only you can get a 
-                        b 52% DISCOUNT off the recommended retail price for Previtalize.
+                        b #{product.discount} DISCOUNT off the recommended retail price for #{product.name}.
 
 
     .section__80.bg__white
@@ -144,14 +147,14 @@ block content
                     .row.center-xs.mt__40.mb__40
                         .col.xs-12.col-md-8
                             img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_4_bottles_1024x1024.png" alt="Image Title")
-                    h1.mb__40.mt__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                    h1.mb__40.mt__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
                     +order-button('Add to cart - $95.00')
 
 
                     .row.center-xs
                         .col-xs-11.col-md-6
                             div.retail.mb__40.mt__40
-                                p.mb__0 Recommended retail $200
+                                p.mb__0 Recommended retail #{product.retail}
 
                     p.border-dotted
                         | *For a four month supply, this works out at just $0.78 a day to turbo-
@@ -257,12 +260,13 @@ block content
             .row.center-xs
                 .col-xs-11.col-xs-11
 
-                    h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                    h1.mb__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
 
                     p.mb__40 87% of customers add on with this offer
 
-                    +order-button('Add to my order - $97').shadow
-
+                    button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                        | Add 1 Bottle of #{product.name} to your order - #{product.price}
+                        i.fa.fa-arrow-right.sp__left-1
     //- Section 
     .center-xs.bg__white.section__80
         .container
@@ -312,9 +316,11 @@ block content
     .container.section__80
         .row.center-xs
             .col-xs-11.col-md-8
-                h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
-                +order-button('Add to my order - $95.00')
+                h1.mb__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
 
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    | Add 1 Bottle of #{product.name} to your order - #{product.price}
+                    i.fa.fa-arrow-right.sp__left-1
 
     //- Section
     .bg__lightgrey.section__80
@@ -326,7 +332,7 @@ block content
 
                             div.important.mb__40 Important
 
-                        h1.mb__40 Your 52% Discount is Available Only from this Page
+                        h1.mb__40 Your #{product.discount} Discount is Available Only from this Page
 
                         p 
                             | As you’ve purchased Provitalize, you’ve already proven you’re 
@@ -368,11 +374,19 @@ block content
                     .col.xs-12.col-md-8
                         img.mt__40(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_4_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
                 .sp__25
-                h1.mb__40 Add Previtalize 4-Bottle Bundle to your order for just $95.00
+                h1.mb__40 Add #{product.name} #{product.quanitity}-Bottle Bundle to your order for just #{product.price}
                 p.mb__40 Add on available on this page only
-                +order-button('Add to my order - $95.00')
+                // Order Button
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    | Yes, Add #{product.quantity} Bottle of #{product.name} To My Order Now
+                    i.fa.fa-arrow-right.sp__left-1
+
                 .sp__25
-                +cancel-button('No thank you, I would not like to take advantage of the 52% discount for 4 bottles of Previtalize. I’m happy with just one month supply and then paying $99 per bottle afterward. Please take me to the next page to complete my order')
+                // Cancel Button
+                button#cancel.ch-btn.mt__40.f__bold
+                    | No thank you, I would not like to take advantage of the #{product.discount} 
+                    | discount for #{product.quantity} bottle of #{product.name}. I’m happy maintain the release of stored 
+                    | fat into my body’s energy at average levels. Please take me to the next screen to complete my order
 
 
     //- Section
