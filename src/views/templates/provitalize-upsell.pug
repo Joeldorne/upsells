@@ -48,7 +48,9 @@
             .col-xs-11.col-md-8
                 h1.mb__40.c__blue Add #{product.name} #{product.quantity}-Bottle Bundle to your order
 
-                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold Add to your order - #{product.price}
+
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    |Add #{product.quantity} Bottles of #{product.name} To My Order Now!
                     i.fa.fa-arrow-right.sp__left-1
 
                 p.retail.mt__40
@@ -106,7 +108,7 @@
 
                 h1.mb__40 This 45% Discount is Available Only as a ONE-TIME Add On for New Customers
                 p.mb__40
-                    | If you close this page you’ll need to pay #{product.perbottleretail} for a single bottle of Provitalize in the future. Whereas today, you can get #{product.quantity} bottles for just #{product.perbottleretail} each.
+                    | If you close this page you’ll need to pay #{product.perbottleretail} for a single bottle of Provitalize in the future. Whereas today, you can get #{product.quantity} bottles for just #{product.perbottle} each.
                     | If you’re serious about improving your gut health...feeding your body with healthy bacteria...and regaining your ability to turn food into fuel instead of ugly belly fat, make sure you take advantage of this special offer.
                     | And remember that with our #{product.quantity}0 day month back guarantee, you either lose weight and gain greater self confidence from a slimmer, healthier body or you get every cent back.
                     | You’ve been battling for weight problems for so long. Don’t you think it’s time to 
@@ -118,7 +120,9 @@
             .col-xs-11.col-md-8
                 //- highlight "Provitalize 6-Bottle Bundle" Orange
                 h1.mb__40 Add Provitalize #{product.quantity}-Bottle Bundle to your order (Retail price: #{product.retail})
-                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold Add to your order - #{product.price}
+
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    |Add #{product.quantity} Bottles of #{product.name} To My Order Now!
                     i.fa.fa-arrow-right.sp__left-1
 
                 .row.center-xs
@@ -145,8 +149,8 @@
                     i.fa.fa-arrow-right.sp__left-1
                 
 
-                    button#cancel.ch-btn.mt__40.f__bold
-                        | No thank you, I would not like to take advantage of the #{product.discount} discount for #{product.quantity} bottles of #{product.name}. I’m happy with just #{product.currentsupply} supply and then paying #{product.retail} per bottle afterward. Please take me tothe next page to complete my order
+                button#cancel.ch-btn.mt__40.f__bold
+                    | No thank you, I would not like to take advantage of the #{product.discount} discount for #{product.quantity} bottles of #{product.name}. I’m happy with just #{product.currentsupply} supply and then paying #{product.perbottleretail} per bottle afterward. Please take me tothe next page to complete my order
 
 
 

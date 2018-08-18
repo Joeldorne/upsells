@@ -1,25 +1,25 @@
 //- Section 
 div(class=product.theme)
-    .container.section__80
+    .container.section__80.c__white
         .row.center-xs
             .col-xs-11.col-md-8
                 .row.center-xs.mb__40
                     .col.xs-12.col-md-6
                         p.important-light HOLD ON! 
-                h1.mb__40.c__white How Would You Like To Try #{product.quantity} Bottle of #{product.name} at a #{product.discount} Discount?
+                h1.mb__40 How Would You Like To Try #{product.quantity} #{product.SingularOrPlural} of #{product.name} at a #{product.discount} Discount?
 
-                p.c__white 
+                p 
                     | If #{product.previousamount} bottles of #{product.previous} seemed too big a commitment, we get it. Perhaps
                     | the price was too high, even with the discount.
-                p.c__white
+                p
                     | Yet, we’re eager for you to experience how #{product.name} can help you put the
                     | foot down on the accelerator and release more stored fat into your body’s
                     | engine to be 
                     b converted into natural “all day” energy.
-                p.c__white
+                p
                     | So we’d like to make you an offer that’s easier to afford.
-                p.mb__40.c__white
-                    | As a new customer and from this page only you can try 1 bottle of
+                p.mb__40
+                    | As a new customer and from this page only you can try #{product.quantity} #{product.SingularOrPlural} of
                     | #{product.name} for #{product.price}, a #{product.discount} discount on the recommended normal retail price
                     | of #{product.retail}.
 
@@ -29,14 +29,22 @@ div(class=product.theme)
             .col-xs-11.col-md-8
 
                 button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
-                    | Add 1 Bottle of #{product.name} to your order - #{product.price}
+                    | Add #{product.quantity} #{product.SingularOrPlural} of #{product.name} to your order - #{product.price}
                     i.fa.fa-arrow-right.sp__left-1
                 .row.center-xs
                     .col-xs-11.col-md-6
-                        p.retail.mt__40 Retail price #{product.retail} per bottle
-                            .row.center-xs.mt__40.mb__40
-                                .col.xs-12.col-md-8
-                                    img(src=product.image alt="Image Title" style="width:100%;")
+                        p.retail.mt__40 Retail price #{product.perbottleretail} per #{product.SingularOrPlural}
+                .row.center-xs.mt__40.mb__40
+                    .col.xs-12.col-md-6
+                if product.quantity == "1"
+                    .row.center-xs
+                        div(class="col-xs-12 col-md-3")
+                            img(src=product.image alt=product.name )
+
+                else
+                    .row.center-xs
+                        div(class="col-xs-12 col-md-6")
+                            img(src=product.image alt=product.name )
 
                 p.mt__40 
                     | With this generous discount, you can add try out adding #{product.name} as the
@@ -55,7 +63,7 @@ div(class=product.theme).c__white.section__80
             .col-xs-11.col-md-8
                 img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_guarantee_1024x1024.png" alt="Image Title" style="width:300px;")
                 p.mt__40
-                    | #{product.name} #{product.quantity}-Bottle still comes with our 
+                    | #{product.name} #{product.quantity}-#{product.SingularOrPlural} still comes with our 
                     b free shipping worldwide
                     | , backed
                     | by the same 
@@ -71,7 +79,7 @@ div(class=product.theme).c__white.section__80
                         p.important.mb__40 Important 
                 h1.mb__40 This #{product.discount} Discount is Available Only as a ONE-TIME Offer for New Customers
                 p 
-                    | If you close this page you’ll need to pay #{product.retailperbottle} for a single bottle of #{product.name}.
+                    | If you close this page you’ll need to pay #{product.retailperbottle} for a single #{product.SingularOrPlural} of #{product.name}.
                     | Whereas today, you can claim a month’s supply for just #{product.price} and save #{product.saving}
                     | to keep in your pocket.
                 p
@@ -96,7 +104,7 @@ div(class=product.theme).c__white.section__80
         .row.center-xs
             .col-xs-11.col-md-8
                 
-                h1.mb__40 Add Bottle of Postburn for Just #{product.price}
+                h1.mb__40 Add #{product.SingularOrPlural} of #{product.name} for Just #{product.price}
 
                 .row.center-xs
                     .col-xs-11.col-md-6
@@ -107,8 +115,16 @@ div(class=product.theme).c__white.section__80
                     i.fa.fa-arrow-right.sp__left-1
 
                 .row.center-xs.mt__40.mb__40
-                    .col.xs-12.col-md-4
-                        img(src=product.image alt="Image Title")
+
+                if product.quantity == "1"
+                    .row.center-xs
+                        div(class="col-xs-12 col-md-3")
+                            img(src=product.image alt=product.name )
+                else
+                    .row.center-xs
+                        div(class="col-xs-12 col-md-6")
+                            img(src=product.image alt=product.name )
+
                 .row.center-xs
                     .col-xs-11.col-md-8.discount-inner
                         p.discount.mb__40.mt__40 #{product.saving} OFF the retail price!
@@ -127,11 +143,11 @@ div(class=product.theme).section__80.c__white
 
                 // Order Button
                 button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
-                    | Yes, Add #{product.quantity} Bottle of #{product.name} To My Order Now
+                    | Yes, Add #{product.quantity} #{product.SingularOrPlural} of #{product.name} To My Order Now
                     i.fa.fa-arrow-right.sp__left-1
 
                 // Cancel Button
                 button#cancel.ch-btn.mt__40.f__bold
                     | No thank you, I would not like to take advantage of the #{product.discount} 
-                    | discount for #{product.quantity} bottle of #{product.name}. I’m happy maintain the release of stored 
+                    | discount for #{product.quantity} #{product.SingularOrPlural} of #{product.name}. I’m happy maintain the release of stored 
                     | fat into my body’s energy at average levels. Please take me to the next screen to complete my order

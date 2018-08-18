@@ -122,9 +122,12 @@
 
                 .row.center-xs.mt__40.mb__40
                     .col.xs-12.col-md-8
-                        img(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_4_bottles_1024x1024.png" alt="Image Title")
+                        img(src=product.image alt="Image Title")
                 h1.mb__40.mt__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
-                +order-button('Add to cart - $95.00')
+
+                button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
+                    | Add #{product.quantity} bottles of #{product.name} to your order - #{product.price}
+                    i.fa.fa-arrow-right.sp__left-1
 
 
                 .row.center-xs
@@ -241,7 +244,7 @@
                 p.mb__40 87% of customers add on with this offer
 
                 button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
-                    | Add 1 Bottle of #{product.name} to your order - #{product.price}
+                    | Add #{product.quantity} bottles of #{product.name} to your order - #{product.price}
                     i.fa.fa-arrow-right.sp__left-1
 //- Section 
 .center-xs.bg__white.section__80
@@ -295,7 +298,7 @@
             h1.mb__40 Add #{product.name} #{product.quantity}-Bottle Bundle to your order for just #{product.price}
 
             button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
-                | Add 1 Bottle of #{product.name} to your order - #{product.price}
+                | Add #{product.quantity} bottles of #{product.name} to your order - #{product.price}
                 i.fa.fa-arrow-right.sp__left-1
 
 //- Section
@@ -348,20 +351,20 @@
 
             .row.center-xs.mt__40.mb__40
                 .col.xs-12.col-md-8
-                    img.mt__40(src="https://cdn.shopify.com/s/files/1/2060/5733/files/cart_hook_previtalize_4_bottles_1024x1024.png" alt="Image Title" style="width:100%;")
+                    img.mt__40(src=product.image alt="Image Title" style="width:100%;")
             .sp__25
             h1.mb__40 Add #{product.name} #{product.quanitity}-Bottle Bundle to your order for just #{product.price}
             p.mb__40 Add on available on this page only
             // Order Button
             button#order.ch-btn.center-xs.middle-xs.bg__green.c__white.f__bold
-                | Yes, Add #{product.quantity} Bottle of #{product.name} To My Order Now
+                | Yes, Add #{product.quantity} bottles of #{product.name} To My Order Now
                 i.fa.fa-arrow-right.sp__left-1
 
             .sp__25
             // Cancel Button
             button#cancel.ch-btn.mt__40.f__bold
                 | No thank you, I would not like to take advantage of the #{product.discount} 
-                | discount for #{product.quantity} bottle of #{product.name}. I’m happy maintain the release of stored 
+                | discount for #{product.quantity} bottles of #{product.name}. I’m happy maintain the release of stored 
                 | fat into my body’s energy at average levels. Please take me to the next screen to complete my order
 
 
