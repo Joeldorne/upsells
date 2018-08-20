@@ -57,10 +57,14 @@
                     strong #{product.perbottle} per bottle! (
                     | Retail price #{product.perbottleretail} per bottle)
 
-                .row.center-xs.mt__40.mb__40
-                    .col.xs-12.col-md-8
-
-                        img(src=product.image alt="Image Title")
+                if product.quantity == "2"
+                    .row.center-xs.mt__40.mb__40
+                        div(class="col-xs-12 col-md-6")
+                            img(src=product.image alt=product.name )
+                else
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src=product.image alt="Image Title")
 
                 p So for a little over $1 per day, you can be feeding your gut with Provitalize’s 3 vital probiotic strains, premium grade capsules, and additional ingredients that turn your stomach into a boiler for incinerating fat.
 
@@ -129,10 +133,14 @@
                     .col-xs-11.col-md-6
                         p.retail.mb__40.mt__40 #{product.saving} OFF the retail price!
 
-                .row.center-xs.mt__40.mb__40
-                    .col.xs-12.col-md-8
-
-                        img(src=product.image alt="Image Title")
+                if product.quantity == "2"
+                    .row.center-xs.mt__40.mb__40
+                        div(class="col-xs-12 col-md-6")
+                            img(src=product.image alt=product.name )
+                else
+                    .row.center-xs.mt__40.mb__40
+                        .col.xs-12.col-md-8
+                            img(src=product.image alt="Image Title")
 
     //- Bottom Cta
 .bg__pro_gradient.section__80
